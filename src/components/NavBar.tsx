@@ -15,7 +15,7 @@ export default function NavBar() {
           Menu
         </button>
         <ul className="hidden gap-4 sm:flex">
-          {LINKS.map((l) => (
+          {navigationLinks.map((l) => (
             <li key={l.href}>
               <a className="rounded-md px-3 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/10" href={l.href}>
                 {l.label}
@@ -26,7 +26,7 @@ export default function NavBar() {
       </nav>
       {open && (
         <ul className="mx-auto mt-2 max-w-6xl rounded-2xl border border-black/10 bg-background p-2 shadow dark:border-white/20 sm:hidden">
-          {LINKS.map((l) => (
+          {navigationLinks.map((l) => (
             <li key={l.href}>
               <a
                 className="block rounded-md px-3 py-2 text-sm hover:bg-black/5 dark:hover:bg-white/10"

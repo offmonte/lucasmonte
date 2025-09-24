@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: #2563eb; /* blue-600 */
+  --accent-2: #06b6d4; /* cyan-500 */
+  --muted-rgb: 0, 0, 0; /* used for subtle shadows */
 }
 
 @theme inline {
@@ -16,6 +19,9 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --accent: #60a5fa; /* blue-400 */
+    --accent-2: #22d3ee; /* cyan-400 */
+    --muted-rgb: 255, 255, 255;
   }
 }
 
@@ -25,6 +31,112 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Subtle decorative background layer */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, color-mix(in oklab, var(--accent), transparent 80%), transparent),
+    radial-gradient(1000px 500px at 90% 0%, color-mix(in oklab, var(--accent-2), transparent 82%), transparent);
+  pointer-events: none;
+}
+
 html { scroll-behavior: smooth; }
 
 .section-offset { scroll-margin-top: 96px; }
+
+/* Headline gradient accent */
+.headline-accent {
+  background: linear-gradient(90deg, var(--foreground), color-mix(in oklab, var(--accent), var(--foreground) 20%), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Elevated surfaces */
+.card-elevated {
+  box-shadow: 0 1px 2px rgba(var(--muted-rgb), 0.04), 0 8px 24px rgba(var(--muted-rgb), 0.08);
+}
+.card-elevated:hover { box-shadow: 0 2px 4px rgba(var(--muted-rgb), 0.06), 0 16px 32px rgba(var(--muted-rgb), 0.12); }
+
+/* Lift on hover */
+.hover-lift { transition: transform .25s ease, box-shadow .25s ease; }
+.hover-lift:hover { transform: translateY(-2px); }
+
+/* Media frame with gradient ring */
+.media-frame {
+  position: relative;
+  background: linear-gradient(135deg, color-mix(in oklab, var(--accent), transparent 70%), color-mix(in oklab, var(--accent-2), transparent 70%));
+  padding: 2px;
+}
+.media-frame > * { border-radius: inherit; }
+
+/* Image zoom container */
+.image-zoom { overflow: hidden; }
+.image-zoom img { transition: transform .5s ease; }
+.image-zoom:hover img { transform: scale(1.05); }
+
+/* Chips and buttons */
+.chip {
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 9999px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+@media (prefers-color-scheme: dark) {
+  .chip { border-color: rgb(255 255 255 / 0.2); }
+}
+.chip-active {
+  background: var(--foreground);
+  color: var(--background);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--foreground), transparent 85%) inset;
+}
+
+.cta-primary {
+  position: relative;
+  box-shadow: 0 10px 20px -10px color-mix(in oklab, var(--accent), transparent 70%);
+}
+.cta-primary::after {
+  content: "";
+  position: absolute; inset: 0; border-radius: 9999px;
+  background: linear-gradient(90deg, color-mix(in oklab, var(--accent), transparent 70%), color-mix(in oklab, var(--accent-2), transparent 70%));
+  opacity: 0; transition: opacity .2s ease;
+}
+.cta-primary:hover::after { opacity: .15; }
+
+.cta-secondary { transition: background-color .2s ease, box-shadow .2s ease; }
+.cta-secondary:hover { box-shadow: 0 8px 24px -12px rgba(var(--muted-rgb), 0.25); }
+
+/* Inputs focus accent */
+.field-focus { transition: box-shadow .2s ease, border-color .2s ease; }
+.field-focus:focus {
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--accent), transparent 75%);
+  border-color: color-mix(in oklab, var(--accent), transparent 50%);
+}
+
+/* Navigation link underline animation */
+.nav-link { position: relative; }
+.nav-link::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0.35rem; height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  transform: scaleX(0); transform-origin: left; transition: transform .25s ease;
+}
+.nav-link:hover::after { transform: scaleX(1); }
+
+.nav-elevated { box-shadow: 0 8px 30px -12px rgba(var(--muted-rgb), 0.25); }
+
+/* Progress bar */
+.progress-indicator {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  position: relative;
+  transition: width .15s ease;
+  overflow: hidden;
+}
+.progress-indicator::after {
+  content: ""; position: absolute; inset: 0;
+  background: repeating-linear-gradient(45deg, rgb(255 255 255 / 0.12) 0 10px, transparent 10px 20px);
+  mix-blend-mode: overlay; pointer-events: none;
+}

@@ -17,11 +17,11 @@ export default function Courses() {
 
   return (
     <section id="courses" className="section-offset mx-auto max-w-6xl px-4 py-16">
-      <h2 className="text-2xl font-semibold">Cursos e Certificados</h2>
+      <h2 className="headline-accent text-2xl font-semibold">Cursos e Certificados</h2>
       <div className="mt-4 flex flex-wrap gap-2">
         <button
           onClick={() => setTag(null)}
-          className={`rounded-full border px-3 py-1 text-sm ${tag === null ? "bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
+          className={`chip rounded-full border px-3 py-1 text-sm ${tag === null ? "chip-active bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
         >
           Todos
         </button>
@@ -29,7 +29,7 @@ export default function Courses() {
           <button
             key={t}
             onClick={() => setTag(t)}
-            className={`rounded-full border px-3 py-1 text-sm ${tag === t ? "bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
+            className={`chip rounded-full border px-3 py-1 text-sm ${tag === t ? "chip-active bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
           >
             {t}
           </button>
@@ -38,7 +38,7 @@ export default function Courses() {
 
       <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {lista.map((c) => (
-          <article key={c.curso} className="rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
+          <article key={c.curso} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
             <header className="flex items-center justify-between gap-3">
               <div>
                 <h3 className="font-medium">{c.curso}</h3>
@@ -47,7 +47,7 @@ export default function Courses() {
               {c.certificado && (
                 <button
                   onClick={() => setOpenImg(c.certificado)}
-                  className="rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+                  className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
                 >
                   Certificado
                 </button>

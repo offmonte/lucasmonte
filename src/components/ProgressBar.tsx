@@ -16,8 +16,8 @@ export default function ProgressBar() {
   return (
     <div className="fixed inset-x-0 top-0 z-50 h-1 bg-black/10 dark:bg-white/10">
       <div
-        className="h-full origin-left bg-foreground transition-transform"
-        style={{ transform: `scaleX(${p})` }}
+        className="progress-indicator"
+        style={{ width: `${p * 100}%` }}
       />
     </div>
   );

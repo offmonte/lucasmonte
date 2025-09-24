@@ -1,17 +1,22 @@
 import Image from "next/image";
-import { cursos } from "@/data/courses";
+import { cursos } from "@/data/portfolioData";
 import Modal from "@/components/Modal";
 import { useMemo, useState } from "react";
-
-const TAGS = ["Frontend", "Backend", "IA"] as const;
 
 export default function Courses() {
   const [tag, setTag] = useState<string | null>(null);
   const [openImg, setOpenImg] = useState<string | null>(null);
-  const lista = useMemo(() => (tag ? cursos.filter((c) => c.tags.includes(tag)) : cursos), [tag]);
+  const allTags = useMemo(
+    () => Array.from(new Set(cursos.flatMap((c) => c.tags))),
+    []
+  );
+  const lista = useMemo(
+    () => (tag ? cursos.filter((c) => c.tags.includes(tag)) : cursos),
+    [tag]
+  );
 
   return (
-    <section id="cursos" className="section-offset mx-auto max-w-6xl px-4 py-16">
+    <section id="courses" className="section-offset mx-auto max-w-6xl px-4 py-16">
       <h2 className="text-2xl font-semibold">Cursos e Certificados</h2>
       <div className="mt-4 flex flex-wrap gap-2">
         <button
@@ -20,7 +25,7 @@ export default function Courses() {
         >
           Todos
         </button>
-        {TAGS.map((t) => (
+        {allTags.map((t) => (
           <button
             key={t}
             onClick={() => setTag(t)}
@@ -33,7 +38,7 @@ export default function Courses() {
 
       <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {lista.map((c) => (
-          <article key={c.id} className="rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
+          <article key={c.curso} className="rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
             <header className="flex items-center justify-between gap-3">
               <div>
                 <h3 className="font-medium">{c.curso}</h3>
@@ -41,7 +46,7 @@ export default function Courses() {
               </div>
               {c.certificado && (
                 <button
-                  onClick={() => setOpenImg(c.certificado!)}
+                  onClick={() => setOpenImg(c.certificado)}
                   className="rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
                 >
                   Certificado
@@ -62,7 +67,7 @@ export default function Courses() {
       <Modal open={!!openImg} onClose={() => setOpenImg(null)} ariaLabel="Imagem do certificado">
         {openImg && (
           <div className="relative mx-auto aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-lg border border-black/10 dark:border-white/20">
-            <Image src={openImg} alt="Certificado" fill className="object-contain p-6 dark:invert" />
+            <Image src={openImg} alt="Certificado" fill className="object-contain p-6" />
           </div>
         )}
       </Modal>

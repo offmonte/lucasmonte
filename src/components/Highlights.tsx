@@ -39,6 +39,7 @@ export default function Highlights() {
               <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-contain p-8" />
             </div>
             <h3 className="mt-4 text-xl font-semibold text-accent">{ativo.titulo}</h3>
+            <p className="mt-1 text-sm text-black/70 dark:text-white/70">{ativo.resumo}</p>
             <p className="mt-2 text-black/80 dark:text-white/80">{ativo.descricao}</p>
             <div className="modal-actions mt-4 flex flex-wrap items-center gap-3 border-t border-black/10 pt-4 dark:border-white/20">
               {Object.entries(ativo.links).map(([name, url]) =>

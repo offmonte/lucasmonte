@@ -52,7 +52,7 @@ export default function Projects() {
                 url ? (
                   <a
                     key={name}
-                    className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+                    className={`btn-pill ${name.toLowerCase().includes("linkedin") ? "btn-accent-2" : "btn-accent"}`}
                     href={url}
                     target="_blank"
                     rel="noreferrer"

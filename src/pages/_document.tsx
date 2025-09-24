@@ -3,7 +3,15 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-7G5V9o1yLwS9SgZ3e3K2M8S3x1oHnW6IhFhQ4QGz8c9q5tJtU9zRbQxk9QmNqv6y9j5qO7lF8pQkY0n4iJtqKw=="
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
+        />
+      </Head>
       <body className="antialiased">
         <Main />
         <NextScript />

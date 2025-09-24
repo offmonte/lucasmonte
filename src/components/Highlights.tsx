@@ -11,7 +11,7 @@ export default function Highlights() {
   return (
     <section id="destaques" className="section-offset mx-auto max-w-6xl px-4 py-16">
       <div className="flex items-end justify-between">
-        <h2 className="text-2xl font-semibold">Destaques</h2>
+        <h2 className="headline-accent text-2xl font-semibold">Destaques</h2>
         <a href="#projetos" className="text-sm underline">Ver todos</a>
       </div>
       <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -19,9 +19,9 @@ export default function Highlights() {
           <button
             key={`${p.titulo}-${idx}`}
             onClick={() => setOpenIndex(idx)}
-            className="group rounded-2xl border border-black/10 bg-background text-left shadow-sm transition hover:shadow-md dark:border-white/20"
+            className="group card-elevated hover-lift rounded-2xl border border-black/10 bg-background text-left shadow-sm transition hover:shadow-md dark:border-white/20"
           >
-            <div className="relative h-40 w-full overflow-hidden rounded-t-2xl border-b border-black/10 dark:border-white/20">
+            <div className="image-zoom relative h-40 w-full overflow-hidden rounded-t-2xl border-b border-black/10 dark:border-white/20">
               <Image src={p.imagem} alt={p.titulo} fill className="object-cover" />
             </div>
             <div className="p-4">
@@ -35,17 +35,18 @@ export default function Highlights() {
       <Modal open={!!ativo} onClose={() => setOpenIndex(null)} ariaLabel="Detalhe do projeto">
         {ativo && (
           <div>
-            <div className="relative h-48 w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/20">
-              <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-cover" />
+            <div className="relative w-full overflow-hidden rounded-lg modal-hero aspect-[4/3] sm:aspect-square">
+              <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-contain p-8" />
             </div>
-            <h3 className="mt-4 text-xl font-semibold">{ativo.titulo}</h3>
+            <h3 className="mt-4 text-xl font-semibold text-accent">{ativo.titulo}</h3>
+            <p className="mt-1 text-sm text-black/70 dark:text-white/70">{ativo.resumo}</p>
             <p className="mt-2 text-black/80 dark:text-white/80">{ativo.descricao}</p>
-            <div className="mt-4 flex flex-wrap items-center gap-3">
+            <div className="modal-actions mt-4 flex flex-wrap items-center gap-3 border-t border-black/10 pt-4 dark:border-white/20">
               {Object.entries(ativo.links).map(([name, url]) =>
                 url ? (
                   <a
                     key={name}
-                    className="rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+                    className={`btn-pill ${name.toLowerCase().includes("linkedin") ? "btn-accent-2" : "btn-accent"}`}
                     href={url}
                     target="_blank"
                     rel="noreferrer"

@@ -2,7 +2,7 @@ import { personalInfo } from "@/data/portfolioData";
 
 export default function Hero() {
   return (
-    <section id="hero" className="section-offset mx-auto flex min-h-[70vh] max-w-6xl flex-col items-center justify-center text-center">
+    <section id="hero" className="section-offset mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center text-center">
       <h1 className="headline-accent text-4xl font-bold sm:text-6xl">{personalInfo.nome}</h1>
       <p className="mt-4 text-lg text-black/70 dark:text-white/70">{personalInfo.titulo} • {personalInfo.subtitulo}</p>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">

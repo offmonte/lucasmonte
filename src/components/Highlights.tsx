@@ -35,12 +35,12 @@ export default function Highlights() {
       <Modal open={!!ativo} onClose={() => setOpenIndex(null)} ariaLabel="Detalhe do projeto">
         {ativo && (
           <div>
-            <div className="relative h-48 w-full overflow-hidden rounded-lg border border-black/10 dark:border-white/20">
-              <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-cover" />
+            <div className="relative h-56 w-full overflow-hidden rounded-lg modal-hero">
+              <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-contain p-8" />
             </div>
-            <h3 className="mt-4 text-xl font-semibold">{ativo.titulo}</h3>
+            <h3 className="mt-4 text-xl font-semibold text-accent">{ativo.titulo}</h3>
             <p className="mt-2 text-black/80 dark:text-white/80">{ativo.descricao}</p>
-            <div className="mt-4 flex flex-wrap items-center gap-3">
+            <div className="modal-actions mt-4 flex flex-wrap items-center gap-3 border-t border-black/10 pt-4 dark:border-white/20">
               {Object.entries(ativo.links).map(([name, url]) =>
                 url ? (
                   <a

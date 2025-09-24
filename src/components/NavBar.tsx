@@ -1,14 +1,5 @@
 import { useState } from "react";
-
-const LINKS = [
-  { href: "#sobre", label: "Sobre Mim" },
-  { href: "#habilidades", label: "Habilidades" },
-  { href: "#destaques", label: "Destaques" },
-  { href: "#projetos", label: "Projetos" },
-  { href: "#cursos", label: "Cursos" },
-  { href: "#graduacao", label: "Graduação" },
-  { href: "#contato", label: "Contato" },
-];
+import { navigationLinks, personalInfo } from "@/data/portfolioData";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);

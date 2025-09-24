@@ -1,3 +1,5 @@
+import { contatoInfo } from "@/data/portfolioData";
+
 export default function Contact() {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -7,7 +9,7 @@ export default function Contact() {
     const mensagem = data.get("mensagem");
     const subject = encodeURIComponent(`Contato do portfólio - ${nome}`);
     const body = encodeURIComponent(`${mensagem}\n\n${nome} - ${email}`);
-    window.location.href = `mailto:lucasmonte@example.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${contatoInfo.email}?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -34,11 +36,11 @@ export default function Contact() {
         <div className="rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
           <h3 className="font-medium">Informações</h3>
           <ul className="mt-3 space-y-2 text-black/80 dark:text-white/80">
-            <li>Email: <a className="underline" href="mailto:lucasmonte@example.com">lucasmonte@example.com</a></li>
-            <li>Telefone: <a className="underline" href="tel:+550000000000">+55 00 0000-0000</a></li>
-            <li>Localização: Brasil</li>
-            <li>LinkedIn: <a className="underline" href="https://linkedin.com/" target="_blank" rel="noreferrer">linkedin.com</a></li>
-            <li>GitHub: <a className="underline" href="https://github.com/" target="_blank" rel="noreferrer">github.com</a></li>
+            <li>Email: <a className="underline" href={`mailto:${contatoInfo.email}`}>{contatoInfo.email}</a></li>
+            <li>Telefone: <a className="underline" href={`tel:${contatoInfo.phone}`}>{contatoInfo.phone}</a></li>
+            <li>Localização: {contatoInfo.location}</li>
+            <li>LinkedIn: <a className="underline" href={contatoInfo.socialLinks.linkedin} target="_blank" rel="noreferrer">{contatoInfo.socialLinks.linkedin}</a></li>
+            <li>GitHub: <a className="underline" href={contatoInfo.socialLinks.github} target="_blank" rel="noreferrer">{contatoInfo.socialLinks.github}</a></li>
           </ul>
         </div>
       </div>

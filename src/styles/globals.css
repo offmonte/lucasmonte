@@ -144,6 +144,7 @@ html { scroll-behavior: smooth; }
 /* Accent utilities */
 .text-accent { color: var(--accent); }
 .text-accent-2 { color: var(--accent-2); }
+.border-accent { border-color: var(--accent); }
 
 .btn-pill { border-radius: 9999px; padding: 0.375rem 0.75rem; font-size: .875rem; }
 .btn-accent { background: var(--accent); color: var(--background); box-shadow: 0 6px 16px -8px color-mix(in oklab, var(--accent), transparent 60%); transition: opacity .2s ease, transform .2s ease; }

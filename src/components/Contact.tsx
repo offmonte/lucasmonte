@@ -16,48 +16,56 @@ export default function Contact() {
     <section id="contato" className="section-offset mx-auto max-w-6xl px-4 py-16">
       <h2 className="headline-accent text-2xl font-semibold">Contato</h2>
       <div className="mt-6 grid gap-8 sm:grid-cols-2">
+        {/* Formulário */}
         <form onSubmit={onSubmit} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
-          <div className="grid gap-3">
+          <h3 className="text-lg font-medium">Envie uma mensagem</h3>
+          <div className="mt-4 grid gap-3">
             <label className="grid gap-1 text-sm">
-              <span>Nome</span>
-              <input name="nome" required className="field-focus rounded-md border border-black/10 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-black/20 dark:border-white/20 dark:focus:ring-white/20" />
+              <span>Seu nome</span>
+              <input name="nome" placeholder="Seu nome" required className="field-focus rounded-md border border-black/10 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-black/20 dark:border-white/20 dark:focus:ring-white/20" />
             </label>
             <label className="grid gap-1 text-sm">
-              <span>Email</span>
-              <input type="email" name="email" required className="field-focus rounded-md border border-black/10 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-black/20 dark:border-white/20 dark:focus:ring-white/20" />
+              <span>Seu e-mail</span>
+              <input type="email" name="email" placeholder="Seu e-mail" required className="field-focus rounded-md border border-black/10 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-black/20 dark:border-white/20 dark:focus:ring-white/20" />
             </label>
             <label className="grid gap-1 text-sm">
-              <span>Mensagem</span>
-              <textarea name="mensagem" required rows={5} className="field-focus rounded-md border border-black/10 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-black/20 dark:border-white/20 dark:focus:ring-white/20" />
+              <span>Sua mensagem</span>
+              <textarea name="mensagem" placeholder="Escreva sua mensagem" required rows={5} className="field-focus rounded-md border border-black/10 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-black/20 dark:border-white/20 dark:focus:ring-white/20" />
             </label>
-            <button className="cta-primary mt-2 inline-flex items-center gap-2 rounded-md bg-foreground px-4 py-2 text-background hover:opacity-90"><i className="fas fa-paper-plane" aria-hidden /> Enviar</button>
+            <button className="cta-primary mt-2 inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-background hover:opacity-90">
+              Enviar Mensagem
+            </button>
           </div>
         </form>
+
+        {/* Informações */}
         <div className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
-          <h3 className="font-medium">Informações</h3>
-          <ul className="mt-3 space-y-3 text-black/80 dark:text-white/80">
-            <li className="flex items-center gap-3">
-              <span className="icon-button"><i className="fas fa-envelope" aria-hidden /></span>
+          <h3 className="font-medium">Informações de Contato</h3>
+          <ul className="mt-4 space-y-4 text-black/80 dark:text-white/80">
+            <li>
+              <div className="text-sm font-medium">E-mail</div>
               <a className="hover:underline" href={`mailto:${contatoInfo.email}`}>{contatoInfo.email}</a>
             </li>
-            <li className="flex items-center gap-3">
-              <span className="icon-button"><i className="fas fa-phone" aria-hidden /></span>
+            <li>
+              <div className="text-sm font-medium">Telefone</div>
               <a className="hover:underline" href={`tel:${contatoInfo.phone}`}>{contatoInfo.phone}</a>
             </li>
-            <li className="flex items-center gap-3">
-              <span className="icon-button"><i className="fas fa-location-dot" aria-hidden /></span>
+            <li>
+              <div className="text-sm font-medium">Localização</div>
               <span>{contatoInfo.location}</span>
             </li>
           </ul>
-          <div className="mt-4 flex flex-wrap gap-2">
-            <a className="inline-flex items-center gap-2 btn-accent rounded-md px-3 py-2" href={contatoInfo.socialLinks.github} target="_blank" rel="noreferrer">
-              <i className="fab fa-github" aria-hidden />
-              GitHub
-            </a>
-            <a className="inline-flex items-center gap-2 btn-accent rounded-md px-3 py-2" href={contatoInfo.socialLinks.linkedin} target="_blank" rel="noreferrer">
-              <i className="fab fa-linkedin-in" aria-hidden />
-              LinkedIn
-            </a>
+
+          <div className="mt-6">
+            <div className="text-sm font-medium">Redes Sociais</div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <a className="btn-accent-2 rounded-md px-3 py-2" href={contatoInfo.socialLinks.linkedin} target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+              <a className="btn-accent rounded-md px-3 py-2" href={contatoInfo.socialLinks.github} target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>

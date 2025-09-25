@@ -22,12 +22,49 @@ export default function Courses() {
       <div className="flex items-center justify-between">
         <h2 className="headline-accent text-2xl font-semibold">Cursos e Certificados</h2>
         <button
-          onClick={() => setOpenFilter(true)}
+          onClick={() => setOpenFilter((s) => !s)}
+          aria-expanded={openFilter}
+          aria-controls="course-filters"
           className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
         >
           Filtrar
         </button>
       </div>
+
+      {openFilter && (
+        <div id="course-filters" className="mt-3 rounded-2xl border border-black/10 bg-background p-4 shadow-sm dark:border-white/20">
+          <p className="text-sm text-black/70 dark:text-white/70">Selecione uma ou mais tags. Serão mostrados cursos que contenham qualquer uma delas.</p>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {allTags.map((t) => (
+              <button
+                key={t}
+                onClick={() =>
+                  setSelected((prev) =>
+                    prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]
+                  )
+                }
+                className={`chip rounded-full border px-3 py-1 text-sm ${selected.includes(t) ? "chip-active bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
+              >
+                {t}
+              </button>
+            ))}
+          </div>
+          <div className="mt-4 flex items-center justify-between">
+            <button
+              onClick={() => setSelected([])}
+              className="chip rounded-md border border-red-500 text-red-600 hover:bg-red-500/10 dark:border-red-400 dark:text-red-400"
+            >
+              Limpar Filtros
+            </button>
+            <button
+              onClick={() => setOpenFilter(false)}
+              className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+            >
+              Concluir
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Lista de cursos em contêiner estilizado */}
       <div className="mt-6 rounded-2xl border border-black/10 bg-background shadow-sm card-elevated overflow-hidden dark:border-white/20">
@@ -73,42 +110,6 @@ export default function Courses() {
         </div>
       </div>
 
-      {/* Modal de filtros */}
-      <Modal open={openFilter} onClose={() => setOpenFilter(false)} ariaLabel="Filtros de cursos">
-        <div className="p-6">
-          <h3 className="text-lg font-semibold">Filtrar por tags</h3>
-          <p className="mt-1 text-sm text-black/70 dark:text-white/70">Selecione uma ou mais tags. Serão mostrados cursos que contenham qualquer uma delas.</p>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {allTags.map((t) => (
-              <button
-                key={t}
-                onClick={() =>
-                  setSelected((prev) =>
-                    prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]
-                  )
-                }
-                className={`chip rounded-full border px-3 py-1 text-sm ${selected.includes(t) ? "chip-active bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
-              >
-                {t}
-              </button>
-            ))}
-          </div>
-          <div className="mt-6 flex items-center justify-between">
-            <button
-              onClick={() => setSelected([])}
-              className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
-            >
-              Limpar filtros
-            </button>
-            <button
-              onClick={() => setOpenFilter(false)}
-              className="btn-accent rounded-md px-3 py-2"
-            >
-              Fechar
-            </button>
-          </div>
-        </div>
-      </Modal>
 
       {/* Modal do certificado */}
       <Modal open={!!openImg} onClose={() => setOpenImg(null)} ariaLabel="Imagem do certificado">

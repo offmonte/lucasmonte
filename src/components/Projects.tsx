@@ -11,8 +11,28 @@ export default function Projects() {
 
   return (
     <section id="projetos" className="section-offset mx-auto max-w-6xl px-4 py-16">
-      <div className="flex items-end justify-between">
+      <div>
         <h2 className="headline-accent text-2xl font-semibold">Projetos</h2>
+      </div>
+      <div className="mt-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        {lista.map((p, idx) => (
+          <button
+            key={`${p.titulo}-${idx}`}
+            onClick={() => setOpenIndex(idx)}
+            className="group card-elevated hover-lift rounded-2xl border border-black/10 bg-background text-left shadow-sm transition hover:shadow-md dark:border-white/20 block w-full overflow-hidden h-full flex flex-col"
+          >
+            <div className="image-zoom relative h-40 w-full overflow-hidden rounded-t-2xl border-b border-black/10 dark:border-white/20">
+              <Image src={p.imagem} alt={p.titulo} fill className="object-cover object-center" />
+            </div>
+            <div className="p-4 flex-1">
+              <h3 className="font-medium clamp-1">{p.titulo}</h3>
+              <p className="mt-2 text-sm text-black/70 dark:text-white/70 clamp-2">{p.resumo}</p>
+            </div>
+          </button>
+        ))}
+      </div>
+
+      <div className="mt-8 flex justify-center">
         <button
           onClick={() => setAll((s) => !s)}
           className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
@@ -20,32 +40,15 @@ export default function Projects() {
           {all ? "Mostrar menos" : "Mostrar todos"}
         </button>
       </div>
-      <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {lista.map((p, idx) => (
-          <button
-            key={`${p.titulo}-${idx}`}
-            onClick={() => setOpenIndex(idx)}
-            className="group card-elevated hover-lift rounded-2xl border border-black/10 bg-background text-left shadow-sm transition hover:shadow-md dark:border-white/20"
-          >
-            <div className="image-zoom relative h-40 w-full overflow-hidden rounded-t-2xl border-b border-black/10 dark:border-white/20">
-              <Image src={p.imagem} alt={p.titulo} fill className="object-cover" />
-            </div>
-            <div className="p-4">
-              <h3 className="font-medium">{p.titulo}</h3>
-              <p className="mt-2 text-sm text-black/70 dark:text-white/70">{p.resumo}</p>
-            </div>
-          </button>
-        ))}
-      </div>
 
       <Modal open={!!ativo} onClose={() => setOpenIndex(null)} ariaLabel="Detalhe do projeto">
         {ativo && (
           <div>
-            <div className="relative w-full h-72 sm:h-80 overflow-hidden rounded-t-lg">
+            <div className="relative w-full h-72 sm:h-80 overflow-hidden rounded-t-xl">
               <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-cover" />
             </div>
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">{ativo.titulo}</h2>
+              <h2 className="text-2xl font-bold mb-2 text-accent">{ativo.titulo}</h2>
               <p className="font-medium mb-4">{ativo.resumo}</p>
               <p className="mb-6">{ativo.descricao}</p>
               <div className="flex flex-wrap gap-3 justify-center">
@@ -56,7 +59,7 @@ export default function Projects() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block font-medium py-2 px-4 rounded transition duration-300"
+                      className="inline-block font-medium py-2 px-4 rounded-md btn-accent"
                     >
                       {platform}
                     </a>

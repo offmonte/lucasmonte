@@ -35,18 +35,19 @@ export default function Highlights() {
       <Modal open={!!ativo} onClose={() => setOpenIndex(null)} ariaLabel="Detalhe do projeto">
         {ativo && (
           <div>
-            <div className="relative w-full overflow-hidden rounded-lg modal-hero aspect-[4/3] sm:aspect-square">
-              <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-contain p-8" />
+            <div className="relative w-full h-72 sm:h-80 overflow-hidden rounded-t-xl">
+              <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-cover" />
             </div>
-            <h3 className="mt-4 text-xl font-semibold text-accent">{ativo.titulo}</h3>
-            <p className="mt-1 text-sm text-black/70 dark:text-white/70">{ativo.resumo}</p>
-            <p className="mt-2 text-black/80 dark:text-white/80">{ativo.descricao}</p>
-            <div className="modal-actions mt-4 flex flex-wrap items-center gap-3 border-t border-black/10 pt-4 dark:border-white/20">
+            <div className="p-6">
+              <h2 className="text-2xl font-bold mb-2 text-accent">{ativo.titulo}</h2>
+              <p className="font-medium mb-4">{ativo.resumo}</p>
+              <p className="mb-6">{ativo.descricao}</p>
+              <div className="flex flex-wrap gap-3 justify-center">
               {Object.entries(ativo.links).map(([name, url]) =>
                 url ? (
                   <a
                     key={name}
-                    className={`btn-pill ${name.toLowerCase().includes("linkedin") ? "btn-accent-2" : "btn-accent"}`}
+                    className="inline-block font-medium py-2 px-4 rounded-md btn-accent"
                     href={url}
                     target="_blank"
                     rel="noreferrer"
@@ -56,6 +57,7 @@ export default function Highlights() {
                 ) : null
               )}
             </div>
+              </div>
           </div>
         )}
       </Modal>

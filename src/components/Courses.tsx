@@ -49,18 +49,12 @@ export default function Courses() {
               </button>
             ))}
           </div>
-          <div className="mt-4 flex items-center justify-between">
+          <div className="mt-4 flex items-center justify-start">
             <button
               onClick={() => setSelected([])}
               className="chip rounded-md border border-red-500 text-red-600 hover:bg-red-500/10 dark:border-red-400 dark:text-red-400"
             >
               Limpar Filtros
-            </button>
-            <button
-              onClick={() => setOpenFilter(false)}
-              className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
-            >
-              Concluir
             </button>
           </div>
         </div>
@@ -83,7 +77,7 @@ export default function Courses() {
           <ul className="divide-y divide-black/10 dark:divide-white/20">
             {lista.map((c) => (
               <li key={c.curso} className="px-5 py-4">
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex items-center justify-between gap-4">
                   <div>
                     <h3 className="font-medium text-foreground hover:underline cursor-default select-text">{c.curso}</h3>
                     <p className="text-sm text-black/70 dark:text-white/70">Plataforma: {c.plataforma}</p>
@@ -98,7 +92,7 @@ export default function Courses() {
                   {c.certificado && (
                     <button
                       onClick={() => setOpenImg(c.certificado)}
-                      className="text-sm font-medium text-accent hover:underline"
+                      className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
                     >
                       Ver Certificado
                     </button>

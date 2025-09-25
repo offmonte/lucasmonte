@@ -42,33 +42,35 @@ export default function Courses() {
       )}
 
       {/* Lista de cursos */}
-      <ul className="mt-6 space-y-3">
-        {lista.map((c) => (
-          <li key={c.curso} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <h3 className="font-medium">{c.curso}</h3>
-                <p className="text-sm text-black/70 dark:text-white/70">{c.plataforma}</p>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {c.tags.map((t) => (
-                    <span key={t} className="rounded-full border border-black/10 px-2 py-0.5 text-xs dark:border-white/20">
-                      {t}
-                    </span>
-                  ))}
+      <div className="mt-6 max-h-[28rem] overflow-y-auto pr-1">
+        <ul className="space-y-3">
+          {lista.map((c) => (
+            <li key={c.curso} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <h3 className="font-medium">{c.curso}</h3>
+                  <p className="text-sm text-black/70 dark:text-white/70">{c.plataforma}</p>
+                  <div className="mt-3 flex flex-wrap gap-2">
+                    {c.tags.map((t) => (
+                      <span key={t} className="rounded-full border border-black/10 px-2 py-0.5 text-xs dark:border-white/20">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
                 </div>
+                {c.certificado && (
+                  <button
+                    onClick={() => setOpenImg(c.certificado)}
+                    className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+                  >
+                    Certificado
+                  </button>
+                )}
               </div>
-              {c.certificado && (
-                <button
-                  onClick={() => setOpenImg(c.certificado)}
-                  className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
-                >
-                  Certificado
-                </button>
-              )}
-            </div>
-          </li>
-        ))}
-      </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {/* Modal de filtros */}
       <Modal open={openFilter} onClose={() => setOpenFilter(false)} ariaLabel="Filtros de cursos">

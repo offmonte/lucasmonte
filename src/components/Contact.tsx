@@ -30,18 +30,35 @@ export default function Contact() {
               <span>Mensagem</span>
               <textarea name="mensagem" required rows={5} className="field-focus rounded-md border border-black/10 bg-transparent px-3 py-2 outline-none focus:ring-2 focus:ring-black/20 dark:border-white/20 dark:focus:ring-white/20" />
             </label>
-            <button className="cta-primary mt-2 rounded-md bg-foreground px-4 py-2 text-background hover:opacity-90">Enviar</button>
+            <button className="cta-primary mt-2 inline-flex items-center gap-2 rounded-md bg-foreground px-4 py-2 text-background hover:opacity-90"><i className="fas fa-paper-plane" aria-hidden /> Enviar</button>
           </div>
         </form>
         <div className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
           <h3 className="font-medium">Informações</h3>
-          <ul className="mt-3 space-y-2 text-black/80 dark:text-white/80">
-            <li>Email: <a className="underline" href={`mailto:${contatoInfo.email}`}>{contatoInfo.email}</a></li>
-            <li>Telefone: <a className="underline" href={`tel:${contatoInfo.phone}`}>{contatoInfo.phone}</a></li>
-            <li>Localização: {contatoInfo.location}</li>
-            <li>LinkedIn: <a className="underline" href={contatoInfo.socialLinks.linkedin} target="_blank" rel="noreferrer">{contatoInfo.socialLinks.linkedin}</a></li>
-            <li>GitHub: <a className="underline" href={contatoInfo.socialLinks.github} target="_blank" rel="noreferrer">{contatoInfo.socialLinks.github}</a></li>
+          <ul className="mt-3 space-y-3 text-black/80 dark:text-white/80">
+            <li className="flex items-center gap-3">
+              <span className="icon-button"><i className="fas fa-envelope" aria-hidden /></span>
+              <a className="hover:underline" href={`mailto:${contatoInfo.email}`}>{contatoInfo.email}</a>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="icon-button"><i className="fas fa-phone" aria-hidden /></span>
+              <a className="hover:underline" href={`tel:${contatoInfo.phone}`}>{contatoInfo.phone}</a>
+            </li>
+            <li className="flex items-center gap-3">
+              <span className="icon-button"><i className="fas fa-location-dot" aria-hidden /></span>
+              <span>{contatoInfo.location}</span>
+            </li>
           </ul>
+          <div className="mt-4 flex flex-wrap gap-2">
+            <a className="inline-flex items-center gap-2 btn-accent rounded-md px-3 py-2" href={contatoInfo.socialLinks.github} target="_blank" rel="noreferrer">
+              <i className="fab fa-github" aria-hidden />
+              GitHub
+            </a>
+            <a className="inline-flex items-center gap-2 btn-accent rounded-md px-3 py-2" href={contatoInfo.socialLinks.linkedin} target="_blank" rel="noreferrer">
+              <i className="fab fa-linkedin-in" aria-hidden />
+              LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </section>

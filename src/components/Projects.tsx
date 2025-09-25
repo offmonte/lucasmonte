@@ -45,7 +45,7 @@ export default function Projects() {
               <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-cover" />
             </div>
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-2">{ativo.titulo}</h2>
+              <h2 className="text-2xl font-bold mb-2 text-accent">{ativo.titulo}</h2>
               <p className="font-medium mb-4">{ativo.resumo}</p>
               <p className="mb-6">{ativo.descricao}</p>
               <div className="flex flex-wrap gap-3 justify-center">
@@ -56,7 +56,7 @@ export default function Projects() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block font-medium py-2 px-4 rounded transition duration-300"
+                      className={`inline-block font-medium py-2 px-4 rounded-md ${platform.toLowerCase().includes("linkedin") ? "btn-accent-2" : "btn-accent"}`}
                     >
                       {platform}
                     </a>

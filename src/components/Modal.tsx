@@ -37,7 +37,7 @@ export default function Modal({ open, onClose, ariaLabel, children }: ModalProps
         className="card-elevated relative max-h-[90vh] w-[92vw] max-w-xl overflow-y-auto rounded-xl bg-background p-0 shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <button aria-label="Fechar" className="icon-button absolute right-3 top-3 w-10 h-10 text-accent text-2xl" onClick={onClose}>×</button>
+        <button aria-label="Fechar" className="icon-button absolute right-3 top-3 w-10 h-10 text-accent text-2xl z-10" onClick={onClose}>×</button>
         {children}
       </div>
     </div>,

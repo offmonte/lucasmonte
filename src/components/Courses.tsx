@@ -29,47 +29,51 @@ export default function Courses() {
         </button>
       </div>
 
-      {tag && (
-        <div className="mt-3 text-sm text-black/70 dark:text-white/70">
-          Filtrando por: <span className="font-medium">{tag}</span>
-          <button
-            onClick={() => setTag(null)}
-            className="ml-3 underline"
-          >
-            Limpar
-          </button>
+      {/* Lista de cursos em contêiner estilizado */}
+      <div className="mt-6 rounded-2xl border border-black/10 bg-background shadow-sm card-elevated overflow-hidden dark:border-white/20">
+        <div className="flex items-center justify-between px-5 py-3 border-b border-black/10 dark:border-white/20">
+          <p className="text-sm font-medium">
+            {tag ? (
+              <>
+                Cursos — <span className="text-accent">{tag}</span>
+              </>
+            ) : (
+              "Todos os Cursos"
+            )} ({lista.length} certificados)
+          </p>
+          {tag && (
+            <button onClick={() => setTag(null)} className="text-sm underline">Limpar</button>
+          )}
         </div>
-      )}
-
-      {/* Lista de cursos */}
-      <div className="mt-6 max-h-[28rem] overflow-y-auto pr-1">
-        <ul className="space-y-3">
-          {lista.map((c) => (
-            <li key={c.curso} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <h3 className="font-medium">{c.curso}</h3>
-                  <p className="text-sm text-black/70 dark:text-white/70">{c.plataforma}</p>
-                  <div className="mt-3 flex flex-wrap gap-2">
-                    {c.tags.map((t) => (
-                      <span key={t} className="rounded-full border border-black/10 px-2 py-0.5 text-xs dark:border-white/20">
-                        {t}
-                      </span>
-                    ))}
+        <div className="max-h-[28rem] overflow-y-auto">
+          <ul className="divide-y divide-black/10 dark:divide-white/20">
+            {lista.map((c) => (
+              <li key={c.curso} className="px-5 py-4">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-medium text-foreground hover:underline cursor-default select-text">{c.curso}</h3>
+                    <p className="text-sm text-black/70 dark:text-white/70">Plataforma: {c.plataforma}</p>
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {c.tags.map((t) => (
+                        <span key={t} className="rounded-full border border-black/10 px-2 py-0.5 text-xs dark:border-white/20">
+                          {t}
+                        </span>
+                      ))}
+                    </div>
                   </div>
+                  {c.certificado && (
+                    <button
+                      onClick={() => setOpenImg(c.certificado)}
+                      className="text-sm font-medium text-accent hover:underline"
+                    >
+                      Ver Certificado
+                    </button>
+                  )}
                 </div>
-                {c.certificado && (
-                  <button
-                    onClick={() => setOpenImg(c.certificado)}
-                    className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
-                  >
-                    Certificado
-                  </button>
-                )}
-              </div>
-            </li>
-          ))}
-        </ul>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       {/* Modal de filtros */}

@@ -19,14 +19,14 @@ export default function Projects() {
           <button
             key={`${p.titulo}-${idx}`}
             onClick={() => setOpenIndex(idx)}
-            className="group card-elevated hover-lift rounded-2xl border border-black/10 bg-background text-left shadow-sm transition hover:shadow-md dark:border-white/20 block w-full overflow-hidden"
+            className="group card-elevated hover-lift rounded-2xl border border-black/10 bg-background text-left shadow-sm transition hover:shadow-md dark:border-white/20 block w-full overflow-hidden h-full flex flex-col"
           >
             <div className="image-zoom relative h-40 w-full overflow-hidden rounded-t-2xl border-b border-black/10 dark:border-white/20">
-              <Image src={p.imagem} alt={p.titulo} fill className="object-cover" />
+              <Image src={p.imagem} alt={p.titulo} fill className="object-cover object-center" />
             </div>
-            <div className="p-4">
-              <h3 className="font-medium">{p.titulo}</h3>
-              <p className="mt-2 text-sm text-black/70 dark:text-white/70">{p.resumo}</p>
+            <div className="p-4 flex-1">
+              <h3 className="font-medium clamp-1">{p.titulo}</h3>
+              <p className="mt-2 text-sm text-black/70 dark:text-white/70 clamp-2">{p.resumo}</p>
             </div>
           </button>
         ))}

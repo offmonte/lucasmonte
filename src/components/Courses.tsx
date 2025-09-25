@@ -4,7 +4,7 @@ import Modal from "@/components/Modal";
 import { useMemo, useState } from "react";
 
 export default function Courses() {
-  const [tag, setTag] = useState<string | null>(null);
+  const [selected, setSelected] = useState<string[]>([]);
   const [openImg, setOpenImg] = useState<string | null>(null);
   const [openFilter, setOpenFilter] = useState(false);
 
@@ -13,8 +13,8 @@ export default function Courses() {
     []
   );
   const lista = useMemo(
-    () => (tag ? cursos.filter((c) => c.tags.includes(tag)) : cursos),
-    [tag]
+    () => (selected.length ? cursos.filter((c) => c.tags.some((t) => selected.includes(t))) : cursos),
+    [selected]
   );
 
   return (
@@ -33,17 +33,14 @@ export default function Courses() {
       <div className="mt-6 rounded-2xl border border-black/10 bg-background shadow-sm card-elevated overflow-hidden dark:border-white/20">
         <div className="flex items-center justify-between px-5 py-3 border-b border-black/10 dark:border-white/20">
           <p className="text-sm font-medium">
-            {tag ? (
+            {selected.length ? (
               <>
-                Cursos — <span className="text-accent">{tag}</span>
+                Cursos — <span className="text-accent">{selected.join(", ")}</span>
               </>
             ) : (
               "Todos os Cursos"
             )} ({lista.length} certificados)
           </p>
-          {tag && (
-            <button onClick={() => setTag(null)} className="text-sm underline">Limpar</button>
-          )}
         </div>
         <div className="max-h-[28rem] overflow-y-auto">
           <ul className="divide-y divide-black/10 dark:divide-white/20">
@@ -80,28 +77,35 @@ export default function Courses() {
       <Modal open={openFilter} onClose={() => setOpenFilter(false)} ariaLabel="Filtros de cursos">
         <div className="p-6">
           <h3 className="text-lg font-semibold">Filtrar por tags</h3>
+          <p className="mt-1 text-sm text-black/70 dark:text-white/70">Selecione uma ou mais tags. Serão mostrados cursos que contenham qualquer uma delas.</p>
           <div className="mt-4 flex flex-wrap gap-2">
-            <button
-              onClick={() => {
-                setTag(null);
-                setOpenFilter(false);
-              }}
-              className={`chip rounded-full border px-3 py-1 text-sm ${tag === null ? "chip-active bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
-            >
-              Todos
-            </button>
             {allTags.map((t) => (
               <button
                 key={t}
-                onClick={() => {
-                  setTag(t);
-                  setOpenFilter(false);
-                }}
-                className={`chip rounded-full border px-3 py-1 text-sm ${tag === t ? "chip-active bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
+                onClick={() =>
+                  setSelected((prev) =>
+                    prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]
+                  )
+                }
+                className={`chip rounded-full border px-3 py-1 text-sm ${selected.includes(t) ? "chip-active bg-foreground text-background" : "border-black/10 hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"}`}
               >
                 {t}
               </button>
             ))}
+          </div>
+          <div className="mt-6 flex items-center justify-between">
+            <button
+              onClick={() => setSelected([])}
+              className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+            >
+              Limpar filtros
+            </button>
+            <button
+              onClick={() => setOpenFilter(false)}
+              className="btn-accent rounded-md px-3 py-2"
+            >
+              Fechar
+            </button>
           </div>
         </div>
       </Modal>

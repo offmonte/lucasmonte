@@ -35,7 +35,7 @@ export default function Highlights() {
       <Modal open={!!ativo} onClose={() => setOpenIndex(null)} ariaLabel="Detalhe do projeto">
         {ativo && (
           <div>
-            <div className="relative w-full h-72 sm:h-80 overflow-hidden rounded-t-xl -mt-4 -mx-4">
+            <div className="relative w-full h-72 sm:h-80 overflow-hidden rounded-t-xl -mx-4">
               <Image src={ativo.imagem} alt={ativo.titulo} fill className="object-cover" />
             </div>
             <div className="p-6">

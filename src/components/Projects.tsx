@@ -56,7 +56,7 @@ export default function Projects() {
                       href={url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`inline-block font-medium py-2 px-4 rounded-md ${platform.toLowerCase().includes("linkedin") ? "btn-accent-2" : "btn-accent"}`}
+                      className="inline-block font-medium py-2 px-4 rounded-md btn-accent"
                     >
                       {platform}
                     </a>

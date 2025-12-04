@@ -55,6 +55,11 @@ html { scroll-behavior: smooth; }
   color: transparent;
 }
 
+/* Section title with accent color only */
+.section-title {
+  color: var(--accent);
+}
+
 /* Elevated surfaces */
 .card-elevated {
   box-shadow: 0 1px 2px rgba(var(--muted-rgb), 0.04), 0 8px 24px rgba(var(--muted-rgb), 0.08);

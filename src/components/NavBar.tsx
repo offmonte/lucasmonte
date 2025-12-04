@@ -6,7 +6,7 @@ export default function NavBar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-40">
       <nav className="nav-elevated flex items-center justify-between bg-background/80 px-4 py-4 backdrop-blur dark:border-white/20">
-        <a href="#hero" className="headline-accent font-semibold">{personalInfo.nome}</a>
+        <a href="#hero" className="section-title font-semibold">Lucas Monte</a>
         <button
           className="shrink-0 rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10 sm:hidden"
           onClick={() => setOpen((s) => !s)}

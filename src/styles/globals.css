@@ -57,7 +57,7 @@ html { scroll-behavior: smooth; }
 
 /* Section title with accent color only */
 .section-title {
-  color: var(--accent);
+  color: #2563eb;
 }
 
 /* Elevated surfaces */

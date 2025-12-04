@@ -157,11 +157,9 @@ export const habilidades: Skill[] = [
 
 export const navigationLinks: NavigationLink[] = [
   { label: "Sobre Mim", href: "#sobre" },
-  { label: "Habilidades", href: "#habilidades" },
   { label: "Destaques", href: "#destaques" },
   { label: "Projetos", href: "#projetos" },
   { label: "Cursos", href: "#courses" },
-  { label: "Graduação", href: "#graduacao" },
   { label: "Contato", href: "#contato" },
 ];
 

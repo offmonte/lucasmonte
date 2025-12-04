@@ -20,7 +20,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
     --accent: #60a5fa; /* blue-400 */
-    --accent-2: #60a5fa;/*#22d3ee; /* cyan-400 */
+    --accent-2: #22d3ee; /* cyan-400 */
     --muted-rgb: 255, 255, 255;
   }
 }

@@ -2,11 +2,9 @@ import NavBar from "@/components/NavBar";
 import ProgressBar from "@/components/ProgressBar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
 import Highlights from "@/components/Highlights";
 import Projects from "@/components/Projects";
 import Courses from "@/components/Courses";
-import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -17,11 +15,9 @@ export default function Home() {
       <main className="px-4">
         <Hero />
         <About />
-        <Skills />
         <Highlights />
         <Projects />
         <Courses />
-        <Education />
         <Contact />
       </main>
       <footer className="mx-auto my-10 max-w-6xl px-4">

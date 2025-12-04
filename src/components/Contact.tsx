@@ -17,8 +17,8 @@ export default function Contact() {
       <h2 className="section-title text-2xl font-semibold">Contato</h2>
       <div className="mt-6 grid gap-8 sm:grid-cols-2">
         {/* Formulário */}
-        <form onSubmit={onSubmit} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
-          <h3 className="text-lg font-medium">Envie uma mensagem</h3>
+        <form onSubmit={onSubmit} className="card-elevated rounded-2xl border border-black/10 bg-background p-6 shadow-sm dark:border-white/20">
+          <h3 className="text-xl font-bold">Envie uma mensagem</h3>
           <div className="mt-4 grid gap-3">
             <label className="grid gap-1 text-sm">
               <span>Seu nome</span>
@@ -39,26 +39,26 @@ export default function Contact() {
         </form>
 
         {/* Informações */}
-        <div className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
-          <h3 className="font-medium">Informações de Contato</h3>
-          <ul className="mt-4 space-y-4 text-black/80 dark:text-white/80">
+        <div className="card-elevated rounded-2xl border border-black/10 bg-background p-6 shadow-sm dark:border-white/20">
+          <h3 className="text-xl font-bold">Informações de Contato</h3>
+          <ul className="mt-6 space-y-5">
             <li>
-              <div className="text-sm font-medium">E-mail</div>
-              <a className="hover:underline" href={`mailto:${contatoInfo.email}`}>{contatoInfo.email}</a>
+              <div className="text-base font-bold text-accent mb-1.5">E-mail</div>
+              <a className="text-base hover:underline text-black/80 dark:text-white/80" href={`mailto:${contatoInfo.email}`}>{contatoInfo.email}</a>
             </li>
             <li>
-              <div className="text-sm font-medium">Telefone</div>
-              <a className="hover:underline" href={`tel:${contatoInfo.phone}`}>{contatoInfo.phone}</a>
+              <div className="text-base font-bold text-accent mb-1.5">Telefone</div>
+              <a className="text-base hover:underline text-black/80 dark:text-white/80" href={`tel:${contatoInfo.phone}`}>{contatoInfo.phone}</a>
             </li>
             <li>
-              <div className="text-sm font-medium">Localização</div>
-              <span>{contatoInfo.location}</span>
+              <div className="text-base font-bold text-accent mb-1.5">Localização</div>
+              <span className="text-base text-black/80 dark:text-white/80">{contatoInfo.location}</span>
             </li>
           </ul>
 
-          <div className="mt-6">
-            <div className="text-sm font-medium">Redes Sociais</div>
-            <div className="mt-3 flex flex-wrap gap-2">
+          <div className="mt-7">
+            <div className="text-base font-bold text-accent mb-3">Redes Sociais</div>
+            <div className="flex flex-wrap gap-2">
               <a className="btn-accent-2 rounded-md px-3 py-2" href={contatoInfo.socialLinks.linkedin} target="_blank" rel="noreferrer">
                 LinkedIn
               </a>

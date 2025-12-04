@@ -190,7 +190,7 @@ export const personalInfo = {
   subtitulo: "Especialista em Soluções Digitais",
   sobre: {
     paragrafo1:
-      "Sou desenvolvedor full-stack com 3 anos de experiência em aplicações web e APIs escaláveis. Trabalho com C# (.NET), Python (Flask, FastAPI, OpenCV) e JavaScript/TypeScript (Node.js, React, Next.js), além de automações e análise de dados com Jupyter Notebook.",
+      "Sou desenvolvedor full-stack com 3 anos de experiência em aplicações web e APIs escaláveis. Trabalho com .NET, Python e JavaScript/TypeScript, além de automações e análise de dados com Jupyter Notebook.",
     paragrafo2:
       "Atuei em startups do setor financeiro com foco em grandes volumes de dados, integrações complexas e soluções de alta performance. Domino Git, PostgreSQL, MySQL, Flutter/Dart e serviços em nuvem (AWS e Azure), sempre seguindo boas práticas e entrega contínua.",
   },

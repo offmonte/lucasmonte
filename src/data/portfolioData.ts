@@ -133,20 +133,21 @@ export const projetos: Project[] = [
 ];
 
 export const cursos: Course[] = [
-  { curso: "Inteligência Artificial", plataforma: "FIAP", tags: ["IA", "Machine Learning", "Python", "TensorFlow"], certificado: "/placeholder.svg" },
-  { curso: "HTML e CSS", plataforma: "Alura", tags: ["Frontend", "HTML", "CSS", "Responsivo"], certificado: "/placeholder.svg" },
-  { curso: "CSS com IA", plataforma: "Alura", tags: ["CSS", "IA", "Design", "Frontend"], certificado: "/placeholder.svg" },
-  { curso: "JavaScript ES6+", plataforma: "Rocketseat", tags: ["JavaScript", "ES6", "Frontend", "Programming"], certificado: "/placeholder.svg" },
-  { curso: "React.js Completo", plataforma: "Udemy", tags: ["React", "JavaScript", "Frontend", "SPA"], certificado: "/placeholder.svg" },
-  { curso: "Node.js e Express", plataforma: "Rocketseat", tags: ["Node.js", "Express", "Backend", "API"], certificado: "/placeholder.svg" },
-  { curso: "TypeScript para Desenvolvedores", plataforma: "Alura", tags: ["TypeScript", "JavaScript", "Programming", "Types"], certificado: "/placeholder.svg" },
-  { curso: "Python para Data Science", plataforma: "DataCamp", tags: ["Python", "Data Science", "Pandas", "NumPy"], certificado: "/placeholder.svg" },
-  { curso: "Docker e Kubernetes", plataforma: "Linux Academy", tags: ["Docker", "Kubernetes", "DevOps", "Containers"], certificado: "/placeholder.svg" },
-  { curso: "AWS Cloud Practitioner", plataforma: "AWS", tags: ["AWS", "Cloud", "DevOps", "Infrastructure"], certificado: "/placeholder.svg" },
-  { curso: "C# e ASP.NET Core", plataforma: "Microsoft Learn", tags: ["C#", "ASP.NET", "Backend", "Web API"], certificado: "/placeholder.svg" },
-  { curso: "Machine Learning com Python", plataforma: "Coursera", tags: ["Machine Learning", "Python", "IA", "Data Science"], certificado: "/placeholder.svg" },
-  { curso: "Git e GitHub", plataforma: "Rocketseat", tags: ["Git", "GitHub", "Version Control", "DevOps"], certificado: "/placeholder.svg" },
-  { curso: "SQL e Banco de Dados", plataforma: "Alura", tags: ["SQL", "Database", "PostgreSQL", "MySQL"], certificado: "/placeholder.svg" },
+  { curso: "Customer Experience Management", plataforma: "FIAP", tags: ["CX", "UX", "Management", "Business"], certificado: "/placeholder.svg" },
+  { curso: "Front-End", plataforma: "FIAP", tags: ["Frontend", "Web", "UI"], certificado: "/placeholder.svg" },
+  { curso: "Técnicas de Negociação", plataforma: "FIAP", tags: ["Negociação", "Business", "Soft Skills"], certificado: "/placeholder.svg" },
+  { curso: "User Experience", plataforma: "FIAP", tags: ["UX", "Design", "Frontend"], certificado: "/placeholder.svg" },
+  { curso: "Estratégia e Inovação Tecnológica com aplicações em IA e IoT", plataforma: "FIAP", tags: ["IA", "IoT", "Estratégia", "Inovação"], certificado: "/placeholder.svg" },
+  { curso: "Cloud Fundamentals, Administration and Solution Architect", plataforma: "FIAP", tags: ["AWS", "Cloud", "DevOps", "Architecture"], certificado: "/placeholder.svg" },
+  { curso: "Desenvolvimento .NET", plataforma: "FIAP", tags: [".NET", "C#", "Backend", "Web"], certificado: "/placeholder.svg" },
+  { curso: "DevOps & Agile Culture", plataforma: "FIAP", tags: ["DevOps", "Agile", "Infrastructure", "CI/CD"], certificado: "/placeholder.svg" },
+  { curso: "Gestão de Infraestrutura de TI", plataforma: "FIAP", tags: ["Infrastructure", "IT", "DevOps", "Management"], certificado: "/placeholder.svg" },
+  { curso: "Inteligência Artificial e Computacional", plataforma: "FIAP", tags: ["IA", "Machine Learning", "Python", "AI"], certificado: "/placeholder.svg" },
+  { curso: "Python", plataforma: "FIAP", tags: ["Python", "Programming", "Backend", "Data Science"], certificado: "/placeholder.svg" },
+  { curso: "Desenvolvimento de Aplicações Móveis", plataforma: "FIAP", tags: ["Mobile", "Flutter", "React Native", "Development"], certificado: "/placeholder.svg" },
+  { curso: "Desenvolvimento e Designer Web 2.0", plataforma: "FIAP", tags: ["Web", "Design", "Frontend", "UX/UI"], certificado: "/placeholder.svg" },
+  { curso: "Análise de Sistemas e Prototipação Web", plataforma: "FIAP", tags: ["Web", "Analysis", "Design", "Frontend"], certificado: "/placeholder.svg" },
+  { curso: "Formação Social e Sustentabilidade", plataforma: "FIAP", tags: ["Social", "Sustainability", "Business", "Management"], certificado: "/placeholder.svg" },
 ];
 
 export const habilidades: Skill[] = [
@@ -165,7 +166,7 @@ export const navigationLinks: NavigationLink[] = [
 
 export const educacao: Education = {
   course: "Análise e Desenvolvimento de Sistemas",
-  institution: "Universidade Tecnológica Federal do Paraná",
+  institution: "FIAP",
   period: "2020 - 2023",
   description:
     "Graduação focada em desenvolvimento de software, análise de sistemas, banco de dados, engenharia de software e gestão de projetos de TI.",
@@ -189,8 +190,8 @@ export const personalInfo = {
   subtitulo: "Especialista em Soluções Digitais",
   sobre: {
     paragrafo1:
-      "Me chamo Lucas Monte Verde e sou apaixonado por criar soluções web inovadoras que transformam ideias em realidade.",
+      "Sou desenvolvedor full-stack com 3 anos de atuação no desenvolvimento de sistemas web e APIs de alta performance. Trabalho diariamente com C# (.NET), Python (Flask, FastAPI, OpenCV) e JavaScript/TypeScript (Node.js, Express, React, Next.js), sempre buscando soluções eficientes e arquitetura bem estruturada. Também possuo experiência em análise de dados e automações usando Jupyter Notebook.",
     paragrafo2:
-      "Desenvolvedor Full Stack com 2 anos de experiência em C# (ASP.NET Core), Python (Flask, FastAPI) e JavaScript/TypeScript (React, Node.js). Especializado em arquitetura de aplicações web e APIs escaláveis.",
+      "Atuei em startups e no setor financeiro, onde lidei com grandes volumes de dados, integrações com plataformas de CRM e desafios técnicos complexos em equipe. Tenho domínio de Git, PostgreSQL, MySQL, Flutter/Dart e serviços em nuvem (AWS e Azure), mantendo um forte compromisso com boas práticas, organização do código, testes e processos de entrega contínua.",
   },
 };

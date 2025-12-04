@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <section id="projetos" className="section-offset mx-auto max-w-6xl px-4 py-16">
       <div>
-        <h2 className="headline-accent text-2xl font-semibold">Projetos</h2>
+        <h2 className="section-title text-2xl font-semibold">Projetos</h2>
       </div>
       <div className="mt-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {lista.map((p, idx) => (

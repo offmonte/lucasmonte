@@ -14,7 +14,7 @@ export default function Contact() {
 
   return (
     <section id="contato" className="section-offset mx-auto max-w-6xl px-4 py-16">
-      <h2 className="headline-accent text-2xl font-semibold">Contato</h2>
+      <h2 className="section-title text-2xl font-semibold">Contato</h2>
       <div className="mt-6 grid gap-8 sm:grid-cols-2">
         {/* Formulário */}
         <form onSubmit={onSubmit} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">

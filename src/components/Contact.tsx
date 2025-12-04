@@ -17,8 +17,8 @@ export default function Contact() {
       <h2 className="section-title text-2xl font-semibold">Contato</h2>
       <div className="mt-6 grid gap-8 sm:grid-cols-2">
         {/* Formulário */}
-        <form onSubmit={onSubmit} className="card-elevated rounded-2xl border border-black/10 bg-background p-5 shadow-sm dark:border-white/20">
-          <h3 className="text-lg font-medium">Envie uma mensagem</h3>
+        <form onSubmit={onSubmit} className="card-elevated rounded-2xl border border-black/10 bg-background p-6 shadow-sm dark:border-white/20">
+          <h3 className="text-xl font-bold">Envie uma mensagem</h3>
           <div className="mt-4 grid gap-3">
             <label className="grid gap-1 text-sm">
               <span>Seu nome</span>

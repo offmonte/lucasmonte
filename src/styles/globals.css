@@ -49,7 +49,7 @@ html { scroll-behavior: smooth; }
 
 /* Headline gradient accent */
 .headline-accent {
-  background: linear-gradient(90deg, var(--foreground), color-mix(in oklab, var(--accent), var(--foreground) 20%), var(--accent-2));
+  background: linear-gradient(90deg, var(--foreground), color-mix(in oklab, var(--accent), var(--foreground) 20%));/*, var(--accent-2));/* Headline gradient accent */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

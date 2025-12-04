@@ -189,8 +189,8 @@ export const personalInfo = {
   subtitulo: "Especialista em Soluções Digitais",
   sobre: {
     paragrafo1:
-      "Me chamo Lucas Monte Verde e sou apaixonado por criar soluções web inovadoras que transformam ideias em realidade.",
+      "Sou Desenvolvedor Full-Stack com 3 anos de atuação no desenvolvimento de sistemas web e APIs de alta performance. Trabalho diariamente com C# (.NET), Python (Flask, FastAPI, OpenCV) e JavaScript/TypeScript (Node.js, Express, React, Next.js), sempre buscando soluções eficientes e arquitetura bem estruturada. Também possuo experiência em análise de dados e automações usando Jupyter Notebook.",
     paragrafo2:
-      "Desenvolvedor Full Stack com 2 anos de experiência em C# (ASP.NET Core), Python (Flask, FastAPI) e JavaScript/TypeScript (React, Node.js). Especializado em arquitetura de aplicações web e APIs escaláveis.",
+      "Atuei em startups do setor financeiro, onde lidei com grandes volumes de dados, integrações com plataformas de CRM e desafios técnicos complexos em equipe. Tenho domínio de Git, PostgreSQL, MySQL, Flutter/Dart e serviços em nuvem (AWS e Azure), mantendo um forte compromisso com boas práticas, organização do código, testes e processos de entrega contínua.",
   },
 };

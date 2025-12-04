@@ -40,7 +40,7 @@ export default function Contact() {
 
         {/* Informações */}
         <div className="card-elevated rounded-2xl border border-black/10 bg-background p-6 shadow-sm dark:border-white/20">
-          <h3 className="text-xl font-bold text-accent">Informações de Contato</h3>
+          <h3 className="text-xl font-bold">Informações de Contato</h3>
           <ul className="mt-6 space-y-5">
             <li>
               <div className="text-base font-bold text-accent mb-1.5">E-mail</div>

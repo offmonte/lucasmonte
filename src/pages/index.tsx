@@ -6,6 +6,7 @@ import Highlights from "@/components/Highlights";
 import Projects from "@/components/Projects";
 import Courses from "@/components/Courses";
 import Contact from "@/components/Contact";
+import { contatoInfo } from "@/data/portfolioData";
 
 export default function Home() {
   return (
@@ -22,11 +23,21 @@ export default function Home() {
       </main>
       <footer className="w-full bg-background py-10">
         <div className="mx-auto max-w-6xl px-4">
-          <div className="rounded-2xl border border-black/10 p-5 text-center text-sm text-black/70 dark:border-white/20 dark:text-white/70">
-            <p>© {new Date().getFullYear()} Lucas Monte. Todos os direitos reservados.</p>
-            <div className="mt-2 flex justify-center gap-4">
-              <a className="hover:underline" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-              <a className="hover:underline" href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <div className="text-center text-sm text-black/70 dark:text-white/70">
+            <p className="mb-4">
+              © {new Date().getFullYear()} Lucas Monte Verde · Desenvolvedor Fullstack
+            </p>
+            <p className="mb-4">
+              Feito com Next.js, React, TypeScript, Tailwind CSS e muito ☕
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              <a className="hover:text-accent hover:underline" href={contatoInfo.socialLinks.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+              <span>·</span>
+              <a className="hover:text-accent hover:underline" href={contatoInfo.socialLinks.github} target="_blank" rel="noreferrer">GitHub</a>
+              <span>·</span>
+              <a className="hover:text-accent hover:underline" href={`mailto:${contatoInfo.email}`}>Email</a>
+              <span>·</span>
+              <a className="hover:text-accent hover:underline" href={`https://wa.me/${contatoInfo.phone.replace(/\D/g, '')}`} target="_blank" rel="noreferrer">WhatsApp</a>
             </div>
           </div>
         </div>

@@ -166,7 +166,7 @@ export const navigationLinks: NavigationLink[] = [
 
 export const educacao: Education = {
   course: "Análise e Desenvolvimento de Sistemas",
-  institution: "Universidade Tecnológica Federal do Paraná",
+  institution: "FIAP",
   period: "2020 - 2023",
   description:
     "Graduação focada em desenvolvimento de software, análise de sistemas, banco de dados, engenharia de software e gestão de projetos de TI.",
@@ -190,7 +190,7 @@ export const personalInfo = {
   subtitulo: "Especialista em Soluções Digitais",
   sobre: {
     paragrafo1:
-      "Sou Desenvolvedor Full-Stack com 3 anos de atuação no desenvolvimento de sistemas web e APIs de alta performance. Trabalho diariamente com C# (.NET), Python (Flask, FastAPI, OpenCV) e JavaScript/TypeScript (Node.js, Express, React, Next.js), sempre buscando soluções eficientes e arquitetura bem estruturada. Também possuo experiência em análise de dados e automações usando Jupyter Notebook.",
+      "Sou desenvolvedor full-stack com 3 anos de atuação no desenvolvimento de sistemas web e APIs de alta performance. Trabalho diariamente com C# (.NET), Python (Flask, FastAPI, OpenCV) e JavaScript/TypeScript (Node.js, Express, React, Next.js), sempre buscando soluções eficientes e arquitetura bem estruturada. Também possuo experiência em análise de dados e automações usando Jupyter Notebook.",
     paragrafo2:
       "Atuei em startups e no setor financeiro, onde lidei com grandes volumes de dados, integrações com plataformas de CRM e desafios técnicos complexos em equipe. Tenho domínio de Git, PostgreSQL, MySQL, Flutter/Dart e serviços em nuvem (AWS e Azure), mantendo um forte compromisso com boas práticas, organização do código, testes e processos de entrega contínua.",
   },

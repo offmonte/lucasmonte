@@ -25,7 +25,7 @@ export default function NavBar() {
         </ul>
       </nav>
       {open && (
-        <ul className="mx-auto mt-2 max-w-6xl rounded-2xl border border-black/10 bg-background p-2 shadow dark:border-white/20 sm:hidden">
+        <ul className="bg-background p-2 sm:hidden">
           {navigationLinks.map((l) => (
             <li key={l.href}>
               <a

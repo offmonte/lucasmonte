@@ -10,12 +10,8 @@ export default function About() {
           <Image src="/placeholder.svg" alt="Foto de perfil" fill className="object-cover" />
         </div>
         <div className="text-black/80 dark:text-white/80 lg:text-lg text-center lg:text-left">
-          <p>
-            {personalInfo.sobre.paragrafo1}
-          </p>
-          <p className="mt-4">
-            {personalInfo.sobre.paragrafo2}
-          </p>
+          <p dangerouslySetInnerHTML={{ __html: personalInfo.sobre.paragrafo1 }} />
+          <p className="mt-4" dangerouslySetInnerHTML={{ __html: personalInfo.sobre.paragrafo2 }} />
         </div>
       </div>
     </section>

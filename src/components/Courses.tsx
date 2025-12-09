@@ -80,7 +80,7 @@ export default function Courses() {
                 <div className="flex items-center justify-between gap-4">
                   <div>
                     <h3 className="font-bold text-foreground hover:underline cursor-default select-text">{c.curso}</h3>
-                    <p className="text-sm text-black/70 dark:text-white/70">Plataforma: {c.plataforma}</p>
+                    <p className="text-sm text-black/70 dark:text-white/70">{c.plataforma}</p>
                     <div className="mt-3 flex flex-wrap gap-2">
                       {c.tags.map((t) => (
                         <span key={t} className="rounded-full border border-black/10 px-2 py-0.5 text-xs dark:border-white/20">

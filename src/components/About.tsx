@@ -9,7 +9,7 @@ export default function About() {
         <div className="media-frame relative aspect-square w-full lg:w-4/5 overflow-hidden rounded-2xl border border-black/10 dark:border-white/20 justify-self-center">
           <Image src="/placeholder.svg" alt="Foto de perfil" fill className="object-cover" />
         </div>
-        <div className="text-black/80 dark:text-white/80 lg:text-lg">
+        <div className="text-black/80 dark:text-white/80 lg:text-lg text-center lg:text-left">
           <p>
             {personalInfo.sobre.paragrafo1}
           </p>

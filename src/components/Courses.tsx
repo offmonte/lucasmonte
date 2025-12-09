@@ -33,7 +33,7 @@ export default function Courses() {
 
       {openFilter && (
         <div id="course-filters" className="mt-3 rounded-2xl border border-black/10 bg-background p-4 shadow-sm dark:border-white/20">
-          <p className="text-sm text-black/70 dark:text-white/70">Selecione uma ou mais tags. Serão mostrados cursos que contenham qualquer uma delas.</p>
+          <p className="text-sm text-black/70 dark:text-white/70 italic">Selecione uma ou mais tags. Serão mostrados cursos que contenham qualquer uma delas.</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {allTags.map((t) => (
               <button

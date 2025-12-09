@@ -92,7 +92,7 @@ export default function Courses() {
                   {c.certificado && (
                     <button
                       onClick={() => setOpenImg(c.certificado)}
-                      className="chip rounded-md border border-accent text-accent px-3 py-1 text-sm hover:bg-black/5"
+                      className="chip rounded-md border border-accent text-accent px-3 py-1 text-sm hover:bg-black/5 font-bold"
                     >
                       Ver Certificado
                     </button>

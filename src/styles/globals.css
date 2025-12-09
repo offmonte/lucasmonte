@@ -172,3 +172,29 @@ html { scroll-behavior: smooth; }
 @media (prefers-color-scheme: dark) { .icon-button { border-color: rgb(255 255 255 / 0.2); } }
 .icon-button:hover { background: rgb(0 0 0 / 0.05); }
 @media (prefers-color-scheme: dark) { .icon-button:hover { background: rgb(255 255 255 / 0.08); } }
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--accent), transparent 40%);
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in oklab, var(--accent), transparent 20%);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: color-mix(in oklab, var(--accent), transparent 40%) transparent;
+  scrollbar-width: thin;
+}

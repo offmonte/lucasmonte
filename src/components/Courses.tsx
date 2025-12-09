@@ -20,12 +20,12 @@ export default function Courses() {
   return (
     <section id="courses" className="section-offset mx-auto max-w-6xl px-4 py-16">
       <div className="flex items-center justify-between">
-        <h2 className="section-title text-2xl font-semibold">Cursos e Certificados</h2>
+        <h2 className="section-title text-2xl font-semibold">Cursos e<br className="md:hidden" /> Certificados</h2>
         <button
           onClick={() => setOpenFilter((s) => !s)}
           aria-expanded={openFilter}
           aria-controls="course-filters"
-          className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+          className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10 font-bold"
         >
           Filtrar
         </button>
@@ -33,7 +33,7 @@ export default function Courses() {
 
       {openFilter && (
         <div id="course-filters" className="mt-3 rounded-2xl border border-black/10 bg-background p-4 shadow-sm dark:border-white/20">
-          <p className="text-sm text-black/70 dark:text-white/70">Selecione uma ou mais tags. Serão mostrados cursos que contenham qualquer uma delas.</p>
+          <p className="text-sm text-black/70 dark:text-white/70 italic">Selecione uma ou mais tags. Serão mostrados cursos que contenham qualquer uma delas.</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {allTags.map((t) => (
               <button
@@ -52,7 +52,7 @@ export default function Courses() {
           <div className="mt-4 flex items-center justify-start">
             <button
               onClick={() => setSelected([])}
-              className="chip rounded-md border border-red-500 text-red-600 hover:bg-red-500/10 dark:border-red-400 dark:text-red-400"
+              className="chip rounded-md border border-red-500 text-red-600 hover:bg-red-500/10 dark:border-red-400 dark:text-red-400 font-bold"
             >
               Limpar Filtros
             </button>
@@ -79,8 +79,8 @@ export default function Courses() {
               <li key={c.curso} className="px-5 py-4">
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <h3 className="font-medium text-foreground hover:underline cursor-default select-text">{c.curso}</h3>
-                    <p className="text-sm text-black/70 dark:text-white/70">Plataforma: {c.plataforma}</p>
+                    <h3 className="font-bold text-foreground hover:underline cursor-default select-text">{c.curso}</h3>
+                    <p className="text-sm text-black/70 dark:text-white/70">{c.plataforma}</p>
                     <div className="mt-3 flex flex-wrap gap-2">
                       {c.tags.map((t) => (
                         <span key={t} className="rounded-full border border-black/10 px-2 py-0.5 text-xs dark:border-white/20">
@@ -92,7 +92,7 @@ export default function Courses() {
                   {c.certificado && (
                     <button
                       onClick={() => setOpenImg(c.certificado)}
-                      className="chip rounded-md border border-accent text-accent px-3 py-1 text-sm hover:bg-black/5"
+                      className="chip rounded-md border border-accent text-accent px-3 py-1 text-sm hover:bg-black/5 font-bold"
                     >
                       Ver Certificado
                     </button>
@@ -108,8 +108,8 @@ export default function Courses() {
       {/* Modal do certificado */}
       <Modal open={!!openImg} onClose={() => setOpenImg(null)} ariaLabel="Imagem do certificado">
         {openImg && (
-          <div className="relative mx-auto aspect-[4/3] w-full max-w-2xl overflow-hidden rounded-lg border border-black/10 dark:border-white/20">
-            <Image src={openImg} alt="Certificado" fill className="object-contain p-6" />
+          <div className="relative w-full">
+            <img src={openImg} alt="Certificado" className="w-full h-auto object-contain" />
           </div>
         )}
       </Modal>

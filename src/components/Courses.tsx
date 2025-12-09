@@ -52,7 +52,7 @@ export default function Courses() {
           <div className="mt-4 flex items-center justify-start">
             <button
               onClick={() => setSelected([])}
-              className="chip rounded-md border border-red-500 text-red-600 hover:bg-red-500/10 dark:border-red-400 dark:text-red-400"
+              className="chip rounded-md border border-red-500 text-red-600 hover:bg-red-500/10 dark:border-red-400 dark:text-red-400 font-bold"
             >
               Limpar Filtros
             </button>

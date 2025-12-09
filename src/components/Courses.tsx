@@ -79,7 +79,7 @@ export default function Courses() {
               <li key={c.curso} className="px-5 py-4">
                 <div className="flex items-center justify-between gap-4">
                   <div>
-                    <h3 className="font-medium text-foreground hover:underline cursor-default select-text">{c.curso}</h3>
+                    <h3 className="font-bold text-foreground hover:underline cursor-default select-text">{c.curso}</h3>
                     <p className="text-sm text-black/70 dark:text-white/70">Plataforma: {c.plataforma}</p>
                     <div className="mt-3 flex flex-wrap gap-2">
                       {c.tags.map((t) => (

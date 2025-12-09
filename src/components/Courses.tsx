@@ -108,7 +108,7 @@ export default function Courses() {
       {/* Modal do certificado */}
       <Modal open={!!openImg} onClose={() => setOpenImg(null)} ariaLabel="Imagem do certificado">
         {openImg && (
-          <div className="relative w-full h-full">
+          <div className="relative w-screen h-screen sm:w-[90vw] sm:h-[90vh]">
             <Image src={openImg} alt="Certificado" fill className="object-contain" />
           </div>
         )}

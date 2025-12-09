@@ -25,7 +25,7 @@ export default function Courses() {
           onClick={() => setOpenFilter((s) => !s)}
           aria-expanded={openFilter}
           aria-controls="course-filters"
-          className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10"
+          className="chip rounded-md border border-black/10 px-3 py-1 text-sm hover:bg-black/5 dark:border-white/20 dark:hover:bg-white/10 font-bold"
         >
           Filtrar
         </button>

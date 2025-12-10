@@ -27,7 +27,7 @@ export interface ContactInfo {
 
 export const projetos: Project[] = [
   {
-    titulo: "Tagpy - Landing Page",
+    titulo: "Tagpy",
     imagem: "/projetos/Tagpy.png",
     resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
     descricao:

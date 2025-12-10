@@ -28,7 +28,7 @@ export interface ContactInfo {
 export const projetos: Project[] = [
   {
     titulo: "Comunicação entre APIs com RabbitMQ",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/RabbitMQ.jpg",
     resumo: "Exemplo prático de comunicação assíncrona entre duas APIs utilizando RabbitMQ e arquitetura Produtor–Consumidor.",
     descricao:
       "Este projeto demonstra uma arquitetura completa de mensageria utilizando RabbitMQ como Message Broker para comunicação assíncrona entre duas APIs independentes. A solução inclui uma API Produtora desenvolvida em Flask, responsável por publicar mensagens na fila, e um serviço Consumidor em Python que escuta a fila, processa as tarefas e simula cargas variáveis. Todo o ambiente é orquestrado via Docker Compose, incluindo o RabbitMQ com interface de administração, garantindo inicialização ordenada, reprodutibilidade e fácil monitoramento. O repositório também oferece exemplos de testes via cURL/Postman, observação de logs em tempo real e uma estrutura limpa e didática para uso em estudos ou aplicações reais.",
@@ -39,7 +39,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "Integração Stripe - Next.js + Node.js",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/PagamentoStripe.jpg",
     resumo:
       "Exemplo completo de integração de pagamentos com Stripe, incluindo validação no backend, segurança reforçada, idempotência e frontend em Next.js.",
     descricao:
@@ -51,7 +51,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "To-Do by Categories",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/ToolDo.jpg",
     resumo:
       "Aplicação de lista de tarefas organizada por categorias, com drag-and-drop, edição inline e persistência via localStorage. Desenvolvida com Next.js (Pages Router) e Tailwind CSS.",
     descricao:
@@ -63,7 +63,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "GreenLight",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/GreenLight.png",
     resumo: "Sistema inteligente de iluminação finalista do Global Solution FIAP - 2º Sem. 2024, focado em automação e economia de energia com sensores LDR.",
     descricao:
       "O GreenLight é uma solução sustentável e escalável voltada para ambientes de grande porte, como indústrias e complexos corporativos, que automatiza a iluminação por meio de sensores LDR. O sistema garante que as lâmpadas sejam acionadas apenas quando necessário, evitando desperdício e reduzindo custos operacionais. A solução inclui integração com aplicativo para monitoramento do consumo em tempo real, histórico mensal e desligamento remoto das lâmpadas - mantendo segurança ao bloquear acionamentos inadequados em condições de alta luminosidade. Fui responsável pela concepção da arquitetura, documentação, organização do fluxo de trabalho e desenvolvimento da API em .NET/C#, com Swagger para documentação e testes. Atuei também na integração entre back-end e front-end, garantindo consistência entre os serviços e a interface. Finalista da premiação Global Solution FIAP 2024 por inovação em eficiência energética.",
@@ -74,7 +74,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "Blue Horizon",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/BlueHorizon.jpg",
     resumo: "IA ambiental para avaliar a qualidade da água em regiões portuárias, projeto que liderei como idealizador e desenvolvedor back-end.",
     descricao:
       "Blue Horizon é uma solução de monitoramento ambiental que utiliza inteligência artificial para analisar a qualidade da água em regiões marítimas próximas a portos. Como líder e idealizador do projeto, coordenei o grupo, defini arquitetura, fluxos de trabalho e desenvolvi o back-end em .NET/C#, além de modelar a IA em Python/Jupyter Notebook para classificar se a água está apta a sustentar vida marinha com base em pH, oxigenação, nutrientes, microplásticos e salinidade. Também participei do design e implementação do banco de dados em PL/SQL, garantindo performance e integridade dos dados. O sistema avalia tendências de melhora ou piora das condições aquáticas e permite que portos recebam incentivos fiscais conforme a água atinge níveis mais saudáveis. A solução inclui ainda um aplicativo para conscientização pública, apresentando impactos ambientais, fiscais e sociais decorrentes da melhoria da qualidade marítima.",
@@ -85,7 +85,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "DAIET - Personalized Diet Generator",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/Daiet.png",
     resumo:
       "Aplicação moderna em Next.js que gera dietas personalizadas usando IA Gemini, com interface responsiva e design moderno em Tailwind CSS.",
     descricao:
@@ -97,7 +97,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "CGenius - API Monolítica",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/Cgenius.png",
     resumo:
       "API monolítica completa para gerenciamento de atendentes, clientes, planos, scripts, especificações e vendas. Inclui CRUDs integrados e relacionamento entre todas as entidades.",
     descricao:
@@ -109,7 +109,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "File Search & Preview",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/SearchPreview.png",
     resumo: "Aplicação para upload, visualização e busca exata em PDFs, DOCX e XLSX com destaque de termos.",
     descricao:
       "Sistema completo que permite enviar e visualizar arquivos (.pdf, .docx, .xlsx), realizar busca por frase exata e destacar ocorrências diretamente na pré-visualização. Possui interface responsiva com Tailwind CSS, suporte a PDF (React-PDF), DOCX (docx-preview), XLSX com formatação (ExcelJS) e aviso para arquivos .doc. Inclui parsing avançado, sanitização de HTML, ordenação por relevância, debounce de pesquisa, além de gerenciamento de Blob URLs. Desenvolvido com Next.js 15, React 19 e TypeScript.",
@@ -120,7 +120,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "VestQuiz",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/VestQuiz.png",
     resumo: "App de estudo com IA criado em menos de 1 dia - gera perguntas, corrige respostas e explica automaticamente.",
     descricao:
       "VestQuiz é um app desenvolvido em menos de um dia para ajudar um amigo a estudar para um vestibulinho. Ele gera perguntas de múltipla escolha, verifica se o usuário acertou e fornece explicações usando o Google Gemini.\n\nFeito com React, TypeScript, Tailwind e Vite, o projeto funciona 100% em frontend. A instalação é simples: `pnpm install`, criar `.env.local` com a chave `VITE_GEMINI_API_KEY`, e rodar `pnpm dev`.\n\nUm projeto rápido, prático e totalmente impulsionado por IA.",
@@ -131,7 +131,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "Autenticação de 2 Fatores (2FA)",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/Python2FA.jpg",
     resumo: "Sistema de login em Python com autenticação via códigos OTP e QR Code.",
     descricao:
       "Projeto desenvolvido em Python com suporte a autenticação de dois fatores (2FA) usando códigos OTP gerados por apps como Google Authenticator e Authy. O sistema cria usuários, gera um QR Code para configurar a conta no autenticador e solicita o código temporário a cada login. Inclui geração de OTP via pyotp, criação de QR Code, manipulação de arquivos e fluxo completo de registro e login.\n\nDependências: pyotp, qrcode, msvcrt (Windows).",
@@ -142,7 +142,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "Portfólio Profissional (Next.js)",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/PortfolioProfissional.png",
     resumo: "Site de portfólio moderno e responsivo feito com Next.js 15, React 19 e Tailwind 4 - reúne projetos, cursos, skills e contato.",
     descricao:
       "Portfólio completo desenvolvido com Next.js 15, React 19, TypeScript e Tailwind CSS 4. O site inclui seções como Hero, Sobre, Destaques, Projetos, Cursos e Contato, todas com modais interativos, dark mode automático, animações suaves e design responsivo mobile-first.\n\nA arquitetura é organizada em componentes reutilizáveis, dados centralizados em `portfolioData.ts` e build otimizada via Turbopack. O projeto segue boas práticas de acessibilidade, SEO, navegação por teclado e contraste de cores.\n\nDeploy recomendado via Vercel com suporte a SSR, HMR e rotas otimizadas.",
@@ -153,7 +153,7 @@ export const projetos: Project[] = [
   },
   {
     titulo: "Tagpy - NFC & Cartões Digitais",
-    imagem: "/placeholder.svg",
+    imagem: "/projetos/Tagpy.png",
     resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
     descricao:
       "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
@@ -161,25 +161,25 @@ export const projetos: Project[] = [
       GitHub: "https://github.com/offmonte",
       Site: "https://tagpy.vercel.app"
     },
-  },  
+  },
 ];
 
 export const cursos: Course[] = [
-  { curso: "Customer Experience Management", plataforma: "FIAP", tags: ["CX", "UX", "Management", "Business"], certificado: "/placeholder.svg" },
-  { curso: "Front-End", plataforma: "FIAP", tags: ["Frontend", "Web", "UI"], certificado: "/placeholder.svg" },
-  { curso: "Técnicas de Negociação", plataforma: "FIAP", tags: ["Negociação", "Business", "Soft Skills"], certificado: "/placeholder.svg" },
-  { curso: "User Experience", plataforma: "FIAP", tags: ["UX", "Design", "Frontend"], certificado: "/placeholder.svg" },
-  { curso: "Estratégia e Inovação Tecnológica com aplicações em IA e IoT", plataforma: "FIAP", tags: ["IA", "IoT", "Estratégia", "Inovação"], certificado: "/placeholder.svg" },
-  { curso: "Cloud Fundamentals, Administration and Solution Architect", plataforma: "FIAP", tags: ["AWS", "Cloud", "DevOps", "Architecture"], certificado: "/placeholder.svg" },
-  { curso: "Desenvolvimento .NET", plataforma: "FIAP", tags: [".NET", "C#", "Backend", "Web"], certificado: "/placeholder.svg" },
-  { curso: "DevOps & Agile Culture", plataforma: "FIAP", tags: ["DevOps", "Agile", "Infrastructure", "CI/CD"], certificado: "/placeholder.svg" },
-  { curso: "Gestão de Infraestrutura de TI", plataforma: "FIAP", tags: ["Infrastructure", "IT", "DevOps", "Management"], certificado: "/placeholder.svg" },
-  { curso: "Inteligência Artificial e Computacional", plataforma: "FIAP", tags: ["IA", "Machine Learning", "Python", "AI"], certificado: "/placeholder.svg" },
-  { curso: "Python", plataforma: "FIAP", tags: ["Python", "Programming", "Backend", "Data Science"], certificado: "/placeholder.svg" },
-  { curso: "Desenvolvimento de Aplicações Móveis", plataforma: "FIAP", tags: ["Mobile", "Flutter", "React Native", "Development"], certificado: "/placeholder.svg" },
-  { curso: "Desenvolvimento e Designer Web 2.0", plataforma: "FIAP", tags: ["Web", "Design", "Frontend", "UX/UI"], certificado: "/placeholder.svg" },
-  { curso: "Análise de Sistemas e Prototipação Web", plataforma: "FIAP", tags: ["Web", "Analysis", "Design", "Frontend"], certificado: "/placeholder.svg" },
-  { curso: "Formação Social e Sustentabilidade", plataforma: "FIAP", tags: ["Social", "Sustainability", "Business", "Management"], certificado: "/placeholder.svg" },
+  { curso: "Customer Experience Management", plataforma: "FIAP", tags: ["CX", "UX", "Management", "Business"], certificado: "/certificados/Customer_Experience_Management.png" },
+  { curso: "Front-End", plataforma: "FIAP", tags: ["Frontend", "Web", "UI"], certificado: "/certificados/Front_End.png" },
+  { curso: "Técnicas de Negociação", plataforma: "FIAP", tags: ["Negociação", "Business", "Soft Skills"], certificado: "/certificados/Tecnicas_de_Negociacao.png" },
+  { curso: "User Experience", plataforma: "FIAP", tags: ["UX", "Design", "Frontend"], certificado: "/certificados/User_Experience.png" },
+  { curso: "Estratégia e Inovação Tecnológica com aplicações em IA e IoT", plataforma: "FIAP", tags: ["IA", "IoT", "Estratégia", "Inovação"], certificado: "" },
+  { curso: "Cloud Fundamentals, Administration and Solution Architect", plataforma: "FIAP", tags: ["AWS", "Cloud", "DevOps", "Architecture"], certificado: "/certificados/Cloud_Fundamentals_Administration_and_Solution_Architect.png" },
+  { curso: "Desenvolvimento .NET", plataforma: "FIAP", tags: [".NET", "C#", "Backend", "Web"], certificado: "/certificados/Desenvolvimento_NET.png" },
+  { curso: "DevOps & Agile Culture", plataforma: "FIAP", tags: ["DevOps", "Agile", "Infrastructure", "CI/CD"], certificado: "/certificados/DevOps_Agile Culture.png" },
+  { curso: "Gestão de Infraestrutura de TI", plataforma: "FIAP", tags: ["Infrastructure", "IT", "DevOps", "Management"], certificado: "/certificados/Gestao_de_Infraestrutura_de_TI.png" },
+  { curso: "Inteligência Artificial e Computacional", plataforma: "FIAP", tags: ["IA", "Machine Learning", "Python", "AI"], certificado: "/certificados/Inteligencia_Artificial_e_Computacional.png" },
+  { curso: "Python", plataforma: "FIAP", tags: ["Python", "Programming", "Backend", "Data Science"], certificado: "/certificados/Python.png" },
+  { curso: "Desenvolvimento de Aplicações Móveis", plataforma: "FIAP", tags: ["Mobile", "Flutter", "React Native", "Development"], certificado: "" },
+  { curso: "Desenvolvimento e Designer Web 2.0", plataforma: "FIAP", tags: ["Web", "Design", "Frontend", "UX/UI"], certificado: "" },
+  { curso: "Análise de Sistemas e Prototipação Web", plataforma: "FIAP", tags: ["Web", "Analysis", "Design", "Frontend"], certificado: "" },
+  { curso: "Formação Social e Sustentabilidade", plataforma: "FIAP", tags: ["Social", "Sustainability", "Business", "Management"], certificado: "/certificados/Formacao_Social_e_Sustentabilidade.png" },
 ];
 
 export const navigationLinks: NavigationLink[] = [

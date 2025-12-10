@@ -26,6 +26,7 @@ export interface ContactInfo {
 }
 
 export const projetos: Project[] = [
+  //Primeira linha
   {
     titulo: "Tagpy",
     imagem: "/projetos/Tagpy.png",
@@ -61,6 +62,18 @@ export const projetos: Project[] = [
     },
   },
   {
+    titulo: "FinTech",
+    imagem: "/projetos/FinTech.jpg",
+    resumo: "Site de portfólio moderno e responsivo feito com Next.js 15, React 19 e Tailwind 4 - reúne projetos, cursos, skills e contato.",
+    descricao:
+      "Portfólio completo desenvolvido com Next.js 15, React 19, TypeScript e Tailwind CSS 4. O site inclui seções como Hero, Sobre, Destaques, Projetos, Cursos e Contato, todas com modais interativos, dark mode automático, animações suaves e design responsivo mobile-first.\n\nA arquitetura é organizada em componentes reutilizáveis, dados centralizados em `portfolioData.ts` e build otimizada via Turbopack. O projeto segue boas práticas de acessibilidade, SEO, navegação por teclado e contraste de cores.\n\nDeploy recomendado via Vercel com suporte a SSR, HMR e rotas otimizadas.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
+   //Segunda linha
+  {
     titulo: "DAIET",
     imagem: "/projetos/Daiet.png",
     resumo:
@@ -84,7 +97,17 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
-  
+  {
+    titulo: "File Search & Preview",
+    imagem: "/projetos/SearchPreview.png",
+    resumo: "Aplicação para upload, visualização e busca exata em PDFs, DOCX e XLSX com destaque de termos.",
+    descricao:
+      "Sistema completo que permite enviar e visualizar arquivos (.pdf, .docx, .xlsx), realizar busca por frase exata e destacar ocorrências diretamente na pré-visualização. Possui interface responsiva com Tailwind CSS, suporte a PDF (React-PDF), DOCX (docx-preview), XLSX com formatação (ExcelJS) e aviso para arquivos .doc. Inclui parsing avançado, sanitização de HTML, ordenação por relevância, debounce de pesquisa, além de gerenciamento de Blob URLs. Desenvolvido com Next.js 15, React 19 e TypeScript.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
   {
     titulo: "Green Light",
     imagem: "/projetos/GreenLight.png",
@@ -96,6 +119,8 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
+  
+  //Terceira linha
   {
     titulo: "Blue Horizon",
     imagem: "/projetos/BlueHorizon.jpg",
@@ -105,17 +130,6 @@ export const projetos: Project[] = [
     links: {
       GitHub: "https://github.com/offmonte/BlueHorizonIA",
       LinkedIn: "hhttps://www.linkedin.com/in/lucas-monte-verde/",
-    },
-  },
-  {
-    titulo: "File Search & Preview",
-    imagem: "/projetos/SearchPreview.png",
-    resumo: "Aplicação para upload, visualização e busca exata em PDFs, DOCX e XLSX com destaque de termos.",
-    descricao:
-      "Sistema completo que permite enviar e visualizar arquivos (.pdf, .docx, .xlsx), realizar busca por frase exata e destacar ocorrências diretamente na pré-visualização. Possui interface responsiva com Tailwind CSS, suporte a PDF (React-PDF), DOCX (docx-preview), XLSX com formatação (ExcelJS) e aviso para arquivos .doc. Inclui parsing avançado, sanitização de HTML, ordenação por relevância, debounce de pesquisa, além de gerenciamento de Blob URLs. Desenvolvido com Next.js 15, React 19 e TypeScript.",
-    links: {
-      GitHub: "https://github.com/offmonte",
-      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
   {
@@ -152,6 +166,7 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
+  //Quarta linha
   {
     titulo: "Portfólio Profissional",
     imagem: "/projetos/PortfolioProfissional.png",

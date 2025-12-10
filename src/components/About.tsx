@@ -7,7 +7,7 @@ export default function About() {
       <h2 className="section-title text-2xl font-semibold">Sobre Mim</h2>
       <div className="mt-6 grid items-center gap-8 sm:grid-cols-2">
         <div className="media-frame relative aspect-square w-full lg:w-4/5 overflow-hidden rounded-2xl border border-black/10 dark:border-white/20 justify-self-center">
-          <Image src="/placeholder.svg" alt="Foto de perfil" fill className="object-cover" />
+          <Image src="/LucasMontePerfil.jpg" alt="Foto de perfil Lucas Monte Verde" fill className="object-cover" />
         </div>
         <div className="text-black/80 dark:text-white/80 lg:text-lg text-center lg:text-left">
           <p dangerouslySetInnerHTML={{ __html: personalInfo.sobre.paragrafo1 }} />

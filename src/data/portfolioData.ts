@@ -26,8 +26,11 @@ export interface ContactInfo {
 }
 
 export const projetos: Project[] = [
+
+  //Primeira linha
+
   {
-    titulo: "Comunicação entre APIs com RabbitMQ",
+    titulo: "APIs com RabbitMQ",
     imagem: "/projetos/RabbitMQ.jpg",
     resumo: "Exemplo prático de comunicação assíncrona entre duas APIs utilizando RabbitMQ e arquitetura Produtor–Consumidor.",
     descricao:
@@ -38,7 +41,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "Integração Stripe - Next.js + Node.js",
+    titulo: "Integração Stripe",
     imagem: "/projetos/PagamentoStripe.jpg",
     resumo:
       "Exemplo completo de integração de pagamentos com Stripe, incluindo validação no backend, segurança reforçada, idempotência e frontend em Next.js.",
@@ -50,7 +53,18 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "To-Do by Categories",
+    titulo: "FinTech",
+    imagem: "/projetos/FinTech.jpg",
+    resumo: "Site de portfólio moderno e responsivo feito com Next.js 15, React 19 e Tailwind 4 - reúne projetos, cursos, skills e contato.",
+    descricao:
+      "Portfólio completo desenvolvido com Next.js 15, React 19, TypeScript e Tailwind CSS 4. O site inclui seções como Hero, Sobre, Destaques, Projetos, Cursos e Contato, todas com modais interativos, dark mode automático, animações suaves e design responsivo mobile-first.\n\nA arquitetura é organizada em componentes reutilizáveis, dados centralizados em `portfolioData.ts` e build otimizada via Turbopack. O projeto segue boas práticas de acessibilidade, SEO, navegação por teclado e contraste de cores.\n\nDeploy recomendado via Vercel com suporte a SSR, HMR e rotas otimizadas.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
+  {
+    titulo: "ToolDo",
     imagem: "/projetos/ToolDo.jpg",
     resumo:
       "Aplicação de lista de tarefas organizada por categorias, com drag-and-drop, edição inline e persistência via localStorage. Desenvolvida com Next.js (Pages Router) e Tailwind CSS.",
@@ -61,10 +75,48 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
+
+  //Segunda linha
+
   {
-    titulo: "GreenLight",
+    titulo: "DAIET",
+    imagem: "/projetos/Daiet.png",
+    resumo:
+      "Aplicação moderna em Next.js que gera dietas personalizadas usando IA Gemini, com interface responsiva e design moderno em Tailwind CSS.",
+    descricao:
+      "Aplicação web desenvolvida com Next.js 15 que permite criar dietas totalmente personalizadas a partir de dados do usuário, integrando a API Google Gemini para gerar planos alimentares inteligentes. A interface possui formulário intuitivo, suporte a múltiplos objetivos (perder, ganhar ou manter peso) e configuração flexível de refeições. O projeto utiliza TypeScript, Tailwind CSS e Lucide Icons para entregar um design moderno, responsivo e com animações suaves. A aplicação inclui uma API interna em Next.js para comunicação com o modelo Gemini, variáveis de ambiente configuráveis e suporte completo para deploy na Vercel. Ideal para demonstrar integração entre IA, UX responsiva e arquitetura moderna em React/Next.js.",
+    links: {
+      GitHub: "https://github.com/offmonte/daiet",
+      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
+  {
+    titulo: "Tagpy",
+    imagem: "/projetos/Tagpy.png",
+    resumo: "Tecnologia moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC.",
+    descricao:
+      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      Site: "https://tagpy.vercel.app"
+    },
+  },
+  
+  {
+    titulo: "File Search & Preview",
+    imagem: "/projetos/SearchPreview.png",
+    resumo: "Aplicação para upload, visualização e busca exata em PDFs, DOCX e XLSX com destaque de termos.",
+    descricao:
+      "Sistema completo que permite enviar e visualizar arquivos (.pdf, .docx, .xlsx), realizar busca por frase exata e destacar ocorrências diretamente na pré-visualização. Possui interface responsiva com Tailwind CSS, suporte a PDF (React-PDF), DOCX (docx-preview), XLSX com formatação (ExcelJS) e aviso para arquivos .doc. Inclui parsing avançado, sanitização de HTML, ordenação por relevância, debounce de pesquisa, além de gerenciamento de Blob URLs. Desenvolvido com Next.js 15, React 19 e TypeScript.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
+  {
+    titulo: "Green Light",
     imagem: "/projetos/GreenLight.png",
-    resumo: "Sistema inteligente de iluminação finalista do Global Solution FIAP - 2º Sem. 2024, focado em automação e economia de energia com sensores LDR.",
+    resumo: "Finalista do Global Solution FIAP - 2º Sem. 2024, sistema inteligente de iluminação focado em automação e economia de energia.",
     descricao:
       "O GreenLight é uma solução sustentável e escalável voltada para ambientes de grande porte, como indústrias e complexos corporativos, que automatiza a iluminação por meio de sensores LDR. O sistema garante que as lâmpadas sejam acionadas apenas quando necessário, evitando desperdício e reduzindo custos operacionais. A solução inclui integração com aplicativo para monitoramento do consumo em tempo real, histórico mensal e desligamento remoto das lâmpadas - mantendo segurança ao bloquear acionamentos inadequados em condições de alta luminosidade. Fui responsável pela concepção da arquitetura, documentação, organização do fluxo de trabalho e desenvolvimento da API em .NET/C#, com Swagger para documentação e testes. Atuei também na integração entre back-end e front-end, garantindo consistência entre os serviços e a interface. Finalista da premiação Global Solution FIAP 2024 por inovação em eficiência energética.",
     links: {
@@ -72,6 +124,9 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
+  
+  //Terceira linha
+
   {
     titulo: "Blue Horizon",
     imagem: "/projetos/BlueHorizon.jpg",
@@ -81,18 +136,6 @@ export const projetos: Project[] = [
     links: {
       GitHub: "https://github.com/offmonte/BlueHorizonIA",
       LinkedIn: "hhttps://www.linkedin.com/in/lucas-monte-verde/",
-    },
-  },
-  {
-    titulo: "DAIET - Personalized Diet Generator",
-    imagem: "/projetos/Daiet.png",
-    resumo:
-      "Aplicação moderna em Next.js que gera dietas personalizadas usando IA Gemini, com interface responsiva e design moderno em Tailwind CSS.",
-    descricao:
-      "Aplicação web desenvolvida com Next.js 15 que permite criar dietas totalmente personalizadas a partir de dados do usuário, integrando a API Google Gemini para gerar planos alimentares inteligentes. A interface possui formulário intuitivo, suporte a múltiplos objetivos (perder, ganhar ou manter peso) e configuração flexível de refeições. O projeto utiliza TypeScript, Tailwind CSS e Lucide Icons para entregar um design moderno, responsivo e com animações suaves. A aplicação inclui uma API interna em Next.js para comunicação com o modelo Gemini, variáveis de ambiente configuráveis e suporte completo para deploy na Vercel. Ideal para demonstrar integração entre IA, UX responsiva e arquitetura moderna em React/Next.js.",
-    links: {
-      GitHub: "https://github.com/offmonte/daiet",
-      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
   {
@@ -108,17 +151,6 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "File Search & Preview",
-    imagem: "/projetos/SearchPreview.png",
-    resumo: "Aplicação para upload, visualização e busca exata em PDFs, DOCX e XLSX com destaque de termos.",
-    descricao:
-      "Sistema completo que permite enviar e visualizar arquivos (.pdf, .docx, .xlsx), realizar busca por frase exata e destacar ocorrências diretamente na pré-visualização. Possui interface responsiva com Tailwind CSS, suporte a PDF (React-PDF), DOCX (docx-preview), XLSX com formatação (ExcelJS) e aviso para arquivos .doc. Inclui parsing avançado, sanitização de HTML, ordenação por relevância, debounce de pesquisa, além de gerenciamento de Blob URLs. Desenvolvido com Next.js 15, React 19 e TypeScript.",
-    links: {
-      GitHub: "https://github.com/offmonte",
-      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
-    },
-  },
-  {
     titulo: "VestQuiz",
     imagem: "/projetos/VestQuiz.png",
     resumo: "App de estudo com IA criado em menos de 1 dia - gera perguntas, corrige respostas e explica automaticamente.",
@@ -130,7 +162,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "Autenticação de 2 Fatores (2FA)",
+    titulo: "Autenticação de 2FA",
     imagem: "/projetos/Python2FA.jpg",
     resumo: "Sistema de login em Python com autenticação via códigos OTP e QR Code.",
     descricao:
@@ -140,8 +172,11 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
+
+  //Quarta linha
+  
   {
-    titulo: "Portfólio Profissional (Next.js)",
+    titulo: "Portfólio Profissional",
     imagem: "/projetos/PortfolioProfissional.png",
     resumo: "Site de portfólio moderno e responsivo feito com Next.js 15, React 19 e Tailwind 4 - reúne projetos, cursos, skills e contato.",
     descricao:
@@ -151,17 +186,7 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
-  {
-    titulo: "Tagpy - NFC & Cartões Digitais",
-    imagem: "/projetos/Tagpy.png",
-    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
-    descricao:
-      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
-    links: {
-      GitHub: "https://github.com/offmonte",
-      Site: "https://tagpy.vercel.app"
-    },
-  },
+  
 ];
 
 export const cursos: Course[] = [

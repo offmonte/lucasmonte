@@ -171,12 +171,6 @@ export const cursos: Course[] = [
   { curso: "Formação Social e Sustentabilidade", plataforma: "FIAP", tags: ["Social", "Sustainability", "Business", "Management"], certificado: "/placeholder.svg" },
 ];
 
-export const habilidades: Skill[] = [
-  { icon: "fas fa-layer-group", title: "Desenvolvimento Fullstack", description: "C# (ASP.NET Core), Python (Flask, FastAPI), React, Next.js, TypeScript", badge: "Avançado" },
-  { icon: "fas fa-cogs", title: "Engenharia de Software", description: "Arquitetura de sistemas, APIs escaláveis, TypeORM, Zod, padrões de design", badge: "Avançado" },
-  { icon: "fas fa-brain", title: "Inteligência Artificial", description: "OpenCV, Jupyter Notebook, Machine Learning, integração de soluções IA", badge: "Intermediário" },
-];
-
 export const navigationLinks: NavigationLink[] = [
   { label: "Sobre Mim", href: "#sobre" },
   { label: "Destaques", href: "#destaques" },

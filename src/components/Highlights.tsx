@@ -32,7 +32,7 @@ export default function Highlights() {
         ))}
       </div>
 
-      <Modal open={!!ativo} onClose={() => setOpenIndex(null)} ariaLabel="Detalhe do projeto">
+      <Modal open={!!ativo} onClose={() => setOpenIndex(null)} ariaLabel="Detalhe do projeto" maxWidth="lg:max-w-[40vw]">
         {ativo && (
           <div>
             <div className="relative w-full h-72 sm:h-80 overflow-hidden rounded-t-xl">

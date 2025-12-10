@@ -27,7 +27,7 @@ export interface ContactInfo {
 
 export const projetos: Project[] = [
   {
-    titulo: "Comunicação entre APIs com RabbitMQ",
+    titulo: "APIs com RabbitMQ",
     imagem: "/projetos/RabbitMQ.jpg",
     resumo: "Exemplo prático de comunicação assíncrona entre duas APIs utilizando RabbitMQ e arquitetura Produtor–Consumidor.",
     descricao:

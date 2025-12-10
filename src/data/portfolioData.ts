@@ -179,16 +179,6 @@ export const navigationLinks: NavigationLink[] = [
   { label: "Contato", href: "#contato" },
 ];
 
-export const educacao: Education = {
-  course: "Análise e Desenvolvimento de Sistemas",
-  institution: "FIAP",
-  period: "2020 - 2023",
-  description:
-    "Graduação focada em desenvolvimento de software, análise de sistemas, banco de dados, engenharia de software e gestão de projetos de TI.",
-  technologies: ["Java", "Python", "SQL", "UML", "Scrum", "Git"],
-  diplomaUrl: "/placeholder.svg",
-};
-
 export const contatoInfo: ContactInfo = {
   email: "lucasmonteverdeee@gmail.com",
   phone: "+55 (11) 94208-4610",

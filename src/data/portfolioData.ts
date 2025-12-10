@@ -13,25 +13,9 @@ export interface Course {
   certificado: string;
 }
 
-export interface Skill {
-  icon: string;
-  title: string;
-  description: string;
-  badge: string;
-}
-
 export interface NavigationLink {
   label: string;
   href: string;
-}
-
-export interface Education {
-  course: string;
-  institution: string;
-  period: string;
-  description: string;
-  technologies: string[];
-  diplomaUrl: string;
 }
 
 export interface ContactInfo {

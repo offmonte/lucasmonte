@@ -66,7 +66,7 @@ export const projetos: Project[] = [
     imagem: "/placeholder.svg",
     resumo: "Sistema inteligente de iluminação finalista do Global Solution FIAP - 2º Sem. 2024, focado em automação e economia de energia com sensores LDR.",
     descricao:
-      "O GreenLight é uma solução sustentável e escalável voltada para ambientes de grande porte, como indústrias e complexos corporativos, que automatiza a iluminação por meio de sensores LDR. O sistema garante que as lâmpadas sejam acionadas apenas quando necessário, evitando desperdício e reduzindo custos operacionais. A solução inclui integração com aplicativo para monitoramento do consumo em tempo real, histórico mensal e desligamento remoto das lâmpadas — mantendo segurança ao bloquear acionamentos inadequados em condições de alta luminosidade. Fui responsável pela concepção da arquitetura, documentação, organização do fluxo de trabalho e desenvolvimento da API em .NET/C#, com Swagger para documentação e testes. Atuei também na integração entre back-end e front-end, garantindo consistência entre os serviços e a interface. Finalista da premiação Global Solution FIAP 2024 por inovação em eficiência energética.",
+      "O GreenLight é uma solução sustentável e escalável voltada para ambientes de grande porte, como indústrias e complexos corporativos, que automatiza a iluminação por meio de sensores LDR. O sistema garante que as lâmpadas sejam acionadas apenas quando necessário, evitando desperdício e reduzindo custos operacionais. A solução inclui integração com aplicativo para monitoramento do consumo em tempo real, histórico mensal e desligamento remoto das lâmpadas - mantendo segurança ao bloquear acionamentos inadequados em condições de alta luminosidade. Fui responsável pela concepção da arquitetura, documentação, organização do fluxo de trabalho e desenvolvimento da API em .NET/C#, com Swagger para documentação e testes. Atuei também na integração entre back-end e front-end, garantindo consistência entre os serviços e a interface. Finalista da premiação Global Solution FIAP 2024 por inovação em eficiência energética.",
     links: {
       GitHub: "https://github.com/offmonte/GreenLight",
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
@@ -121,7 +121,7 @@ export const projetos: Project[] = [
   {
     titulo: "VestQuiz",
     imagem: "/placeholder.svg",
-    resumo: "App de estudo com IA criado em menos de 1 dia — gera perguntas, corrige respostas e explica automaticamente.",
+    resumo: "App de estudo com IA criado em menos de 1 dia - gera perguntas, corrige respostas e explica automaticamente.",
     descricao:
       "VestQuiz é um app desenvolvido em menos de um dia para ajudar um amigo a estudar para um vestibulinho. Ele gera perguntas de múltipla escolha, verifica se o usuário acertou e fornece explicações usando o Google Gemini.\n\nFeito com React, TypeScript, Tailwind e Vite, o projeto funciona 100% em frontend. A instalação é simples: `pnpm install`, criar `.env.local` com a chave `VITE_GEMINI_API_KEY`, e rodar `pnpm dev`.\n\nUm projeto rápido, prático e totalmente impulsionado por IA.",
     links: {
@@ -143,7 +143,7 @@ export const projetos: Project[] = [
   {
     titulo: "Portfólio Profissional (Next.js)",
     imagem: "/placeholder.svg",
-    resumo: "Site de portfólio moderno e responsivo feito com Next.js 15, React 19 e Tailwind 4 — reúne projetos, cursos, skills e contato.",
+    resumo: "Site de portfólio moderno e responsivo feito com Next.js 15, React 19 e Tailwind 4 - reúne projetos, cursos, skills e contato.",
     descricao:
       "Portfólio completo desenvolvido com Next.js 15, React 19, TypeScript e Tailwind CSS 4. O site inclui seções como Hero, Sobre, Destaques, Projetos, Cursos e Contato, todas com modais interativos, dark mode automático, animações suaves e design responsivo mobile-first.\n\nA arquitetura é organizada em componentes reutilizáveis, dados centralizados em `portfolioData.ts` e build otimizada via Turbopack. O projeto segue boas práticas de acessibilidade, SEO, navegação por teclado e contraste de cores.\n\nDeploy recomendado via Vercel com suporte a SSR, HMR e rotas otimizadas.",
     links: {
@@ -151,6 +151,17 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
+  {
+    titulo: "Tagpy - NFC & Cartões Digitais",
+    imagem: "/placeholder.svg",
+    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
+    descricao:
+      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      Site: "https://tagpy.vercel.app"
+    },
+  },  
 ];
 
 export const cursos: Course[] = [

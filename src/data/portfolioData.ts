@@ -26,18 +26,9 @@ export interface ContactInfo {
 }
 
 export const projetos: Project[] = [
+
   //Primeira linha
-  {
-    titulo: "Tagpy",
-    imagem: "/projetos/Tagpy.png",
-    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
-    descricao:
-      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
-    links: {
-      GitHub: "https://github.com/offmonte",
-      Site: "https://tagpy.vercel.app"
-    },
-  },
+
   {
     titulo: "APIs com RabbitMQ",
     imagem: "/projetos/RabbitMQ.jpg",
@@ -72,7 +63,21 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
-   //Segunda linha
+  {
+    titulo: "ToolDo",
+    imagem: "/projetos/ToolDo.jpg",
+    resumo:
+      "Aplicação de lista de tarefas organizada por categorias, com drag-and-drop, edição inline e persistência via localStorage. Desenvolvida com Next.js (Pages Router) e Tailwind CSS.",
+    descricao:
+      "Aplicação completa de gerenciamento de tarefas organizada por categorias, construída com Next.js 15 (Pages Router), React 19 e Tailwind CSS v4. O projeto inclui criação, edição e exclusão de categorias e tarefas, além de filtros de status (all, pending, completed), edição inline, contadores automáticos e drag-and-drop entre categorias. O estado é persistido via um hook SSR-safe de localStorage que sincroniza alterações entre abas do navegador. A arquitetura é bem estruturada, com componentes desacoplados, tipagem forte com TypeScript e temas claro/escuro configurados via CSS tokens integrados ao Tailwind. A aplicação utiliza next/font para tipografia otimizada, design responsivo e boas práticas de acessibilidade, como ARIA, foco controlado e labels semânticas. Ideal para demonstrar organização de estado, UI interativa, arquitetura modular e recursos avançados de front-end.",
+    links: {
+      GitHub: "https://github.com/offmonte/todo",
+      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
+
+  //Segunda linha
+
   {
     titulo: "DAIET",
     imagem: "/projetos/Daiet.png",
@@ -86,17 +91,17 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "ToolDo",
-    imagem: "/projetos/ToolDo.jpg",
-    resumo:
-      "Aplicação de lista de tarefas organizada por categorias, com drag-and-drop, edição inline e persistência via localStorage. Desenvolvida com Next.js (Pages Router) e Tailwind CSS.",
+    titulo: "Tagpy",
+    imagem: "/projetos/Tagpy.png",
+    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
     descricao:
-      "Aplicação completa de gerenciamento de tarefas organizada por categorias, construída com Next.js 15 (Pages Router), React 19 e Tailwind CSS v4. O projeto inclui criação, edição e exclusão de categorias e tarefas, além de filtros de status (all, pending, completed), edição inline, contadores automáticos e drag-and-drop entre categorias. O estado é persistido via um hook SSR-safe de localStorage que sincroniza alterações entre abas do navegador. A arquitetura é bem estruturada, com componentes desacoplados, tipagem forte com TypeScript e temas claro/escuro configurados via CSS tokens integrados ao Tailwind. A aplicação utiliza next/font para tipografia otimizada, design responsivo e boas práticas de acessibilidade, como ARIA, foco controlado e labels semânticas. Ideal para demonstrar organização de estado, UI interativa, arquitetura modular e recursos avançados de front-end.",
+      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
     links: {
-      GitHub: "https://github.com/offmonte/todo",
-      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+      GitHub: "https://github.com/offmonte",
+      Site: "https://tagpy.vercel.app"
     },
   },
+  
   {
     titulo: "File Search & Preview",
     imagem: "/projetos/SearchPreview.png",
@@ -121,6 +126,7 @@ export const projetos: Project[] = [
   },
   
   //Terceira linha
+
   {
     titulo: "Blue Horizon",
     imagem: "/projetos/BlueHorizon.jpg",
@@ -166,7 +172,9 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
+
   //Quarta linha
+  
   {
     titulo: "Portfólio Profissional",
     imagem: "/projetos/PortfolioProfissional.png",

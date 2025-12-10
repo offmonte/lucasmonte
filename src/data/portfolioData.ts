@@ -50,6 +50,18 @@ export const projetos: Project[] = [
     },
   },
   {
+    titulo: "DAIET",
+    imagem: "/projetos/Daiet.png",
+    resumo:
+      "Aplicação moderna em Next.js que gera dietas personalizadas usando IA Gemini, com interface responsiva e design moderno em Tailwind CSS.",
+    descricao:
+      "Aplicação web desenvolvida com Next.js 15 que permite criar dietas totalmente personalizadas a partir de dados do usuário, integrando a API Google Gemini para gerar planos alimentares inteligentes. A interface possui formulário intuitivo, suporte a múltiplos objetivos (perder, ganhar ou manter peso) e configuração flexível de refeições. O projeto utiliza TypeScript, Tailwind CSS e Lucide Icons para entregar um design moderno, responsivo e com animações suaves. A aplicação inclui uma API interna em Next.js para comunicação com o modelo Gemini, variáveis de ambiente configuráveis e suporte completo para deploy na Vercel. Ideal para demonstrar integração entre IA, UX responsiva e arquitetura moderna em React/Next.js.",
+    links: {
+      GitHub: "https://github.com/offmonte/daiet",
+      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
+  {
     titulo: "ToolDo",
     imagem: "/projetos/ToolDo.jpg",
     resumo:
@@ -59,6 +71,17 @@ export const projetos: Project[] = [
     links: {
       GitHub: "https://github.com/offmonte/todo",
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
+    },
+  },
+  {
+    titulo: "Tagpy - Landing Page",
+    imagem: "/projetos/Tagpy.png",
+    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
+    descricao:
+      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      Site: "https://tagpy.vercel.app"
     },
   },
   {
@@ -84,14 +107,13 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "DAIET",
-    imagem: "/projetos/Daiet.png",
-    resumo:
-      "Aplicação moderna em Next.js que gera dietas personalizadas usando IA Gemini, com interface responsiva e design moderno em Tailwind CSS.",
+    titulo: "File Search & Preview",
+    imagem: "/projetos/SearchPreview.png",
+    resumo: "Aplicação para upload, visualização e busca exata em PDFs, DOCX e XLSX com destaque de termos.",
     descricao:
-      "Aplicação web desenvolvida com Next.js 15 que permite criar dietas totalmente personalizadas a partir de dados do usuário, integrando a API Google Gemini para gerar planos alimentares inteligentes. A interface possui formulário intuitivo, suporte a múltiplos objetivos (perder, ganhar ou manter peso) e configuração flexível de refeições. O projeto utiliza TypeScript, Tailwind CSS e Lucide Icons para entregar um design moderno, responsivo e com animações suaves. A aplicação inclui uma API interna em Next.js para comunicação com o modelo Gemini, variáveis de ambiente configuráveis e suporte completo para deploy na Vercel. Ideal para demonstrar integração entre IA, UX responsiva e arquitetura moderna em React/Next.js.",
+      "Sistema completo que permite enviar e visualizar arquivos (.pdf, .docx, .xlsx), realizar busca por frase exata e destacar ocorrências diretamente na pré-visualização. Possui interface responsiva com Tailwind CSS, suporte a PDF (React-PDF), DOCX (docx-preview), XLSX com formatação (ExcelJS) e aviso para arquivos .doc. Inclui parsing avançado, sanitização de HTML, ordenação por relevância, debounce de pesquisa, além de gerenciamento de Blob URLs. Desenvolvido com Next.js 15, React 19 e TypeScript.",
     links: {
-      GitHub: "https://github.com/offmonte/daiet",
+      GitHub: "https://github.com/offmonte",
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
@@ -104,17 +126,6 @@ export const projetos: Project[] = [
       "API monolítica desenvolvida para centralizar toda a gestão comercial da aplicação, incluindo atendentes, clientes, planos, scripts, especificações e vendas. A escolha por uma arquitetura monolítica foi intencional devido à maturidade do escopo, reduzida necessidade de escalabilidade horizontal e à vantagem de manter o desenvolvimento mais simples, testável e integrado. A API implementa CRUD completo para todas as entidades, com relacionamentos encadeados que exigem ordem específica de criação (Atendente → Plano → Script → Cliente → Especificação → Venda). O sistema garante consistência entre entidades e facilita auditoria, controle e rastreabilidade de vendas. A documentação inclui exemplos de payloads JSON para criação de cada entidade, facilitando consumo e integração por outras aplicações. Ideal para demonstrar domínio de modelagem relacional, boas práticas de organização de API e padronização de fluxo operacional.",
     links: {
       GitHub: "https://github.com/offmonte/CGenius",
-      LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
-    },
-  },
-  {
-    titulo: "File Search & Preview",
-    imagem: "/projetos/SearchPreview.png",
-    resumo: "Aplicação para upload, visualização e busca exata em PDFs, DOCX e XLSX com destaque de termos.",
-    descricao:
-      "Sistema completo que permite enviar e visualizar arquivos (.pdf, .docx, .xlsx), realizar busca por frase exata e destacar ocorrências diretamente na pré-visualização. Possui interface responsiva com Tailwind CSS, suporte a PDF (React-PDF), DOCX (docx-preview), XLSX com formatação (ExcelJS) e aviso para arquivos .doc. Inclui parsing avançado, sanitização de HTML, ordenação por relevância, debounce de pesquisa, além de gerenciamento de Blob URLs. Desenvolvido com Next.js 15, React 19 e TypeScript.",
-    links: {
-      GitHub: "https://github.com/offmonte",
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
@@ -151,17 +162,7 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
-  {
-    titulo: "Tagpy - Landing Page",
-    imagem: "/projetos/Tagpy.png",
-    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
-    descricao:
-      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
-    links: {
-      GitHub: "https://github.com/offmonte",
-      Site: "https://tagpy.vercel.app"
-    },
-  },
+  
 ];
 
 export const cursos: Course[] = [

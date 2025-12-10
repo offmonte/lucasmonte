@@ -93,7 +93,7 @@ export const projetos: Project[] = [
   {
     titulo: "Tagpy",
     imagem: "/projetos/Tagpy.png",
-    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
+    resumo: "Tecnologia moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC.",
     descricao:
       "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
     links: {
@@ -116,7 +116,7 @@ export const projetos: Project[] = [
   {
     titulo: "Green Light",
     imagem: "/projetos/GreenLight.png",
-    resumo: "Sistema inteligente de iluminação finalista do Global Solution FIAP - 2º Sem. 2024, focado em automação e economia de energia com sensores LDR.",
+    resumo: "Finalista do Global Solution FIAP - 2º Sem. 2024, sistema inteligente de iluminação focado em automação e economia de energia.",
     descricao:
       "O GreenLight é uma solução sustentável e escalável voltada para ambientes de grande porte, como indústrias e complexos corporativos, que automatiza a iluminação por meio de sensores LDR. O sistema garante que as lâmpadas sejam acionadas apenas quando necessário, evitando desperdício e reduzindo custos operacionais. A solução inclui integração com aplicativo para monitoramento do consumo em tempo real, histórico mensal e desligamento remoto das lâmpadas - mantendo segurança ao bloquear acionamentos inadequados em condições de alta luminosidade. Fui responsável pela concepção da arquitetura, documentação, organização do fluxo de trabalho e desenvolvimento da API em .NET/C#, com Swagger para documentação e testes. Atuei também na integração entre back-end e front-end, garantindo consistência entre os serviços e a interface. Finalista da premiação Global Solution FIAP 2024 por inovação em eficiência energética.",
     links: {

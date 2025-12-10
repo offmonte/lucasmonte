@@ -38,7 +38,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "Integração Stripe - Next.js + Node.js",
+    titulo: "Integração Stripe",
     imagem: "/projetos/PagamentoStripe.jpg",
     resumo:
       "Exemplo completo de integração de pagamentos com Stripe, incluindo validação no backend, segurança reforçada, idempotência e frontend em Next.js.",
@@ -50,7 +50,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "To-Do by Categories",
+    titulo: "ToolDo",
     imagem: "/projetos/ToolDo.jpg",
     resumo:
       "Aplicação de lista de tarefas organizada por categorias, com drag-and-drop, edição inline e persistência via localStorage. Desenvolvida com Next.js (Pages Router) e Tailwind CSS.",
@@ -62,7 +62,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "GreenLight",
+    titulo: "Green Light",
     imagem: "/projetos/GreenLight.png",
     resumo: "Sistema inteligente de iluminação finalista do Global Solution FIAP - 2º Sem. 2024, focado em automação e economia de energia com sensores LDR.",
     descricao:
@@ -84,7 +84,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "DAIET - Personalized Diet Generator",
+    titulo: "DAIET",
     imagem: "/projetos/Daiet.png",
     resumo:
       "Aplicação moderna em Next.js que gera dietas personalizadas usando IA Gemini, com interface responsiva e design moderno em Tailwind CSS.",
@@ -130,7 +130,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "Autenticação de 2 Fatores (2FA)",
+    titulo: "Autenticação de 2FA",
     imagem: "/projetos/Python2FA.jpg",
     resumo: "Sistema de login em Python com autenticação via códigos OTP e QR Code.",
     descricao:
@@ -141,7 +141,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "Portfólio Profissional (Next.js)",
+    titulo: "Portfólio Profissional",
     imagem: "/projetos/PortfolioProfissional.png",
     resumo: "Site de portfólio moderno e responsivo feito com Next.js 15, React 19 e Tailwind 4 - reúne projetos, cursos, skills e contato.",
     descricao:
@@ -152,7 +152,7 @@ export const projetos: Project[] = [
     },
   },
   {
-    titulo: "Tagpy - NFC & Cartões Digitais",
+    titulo: "Tagpy - Landing Page",
     imagem: "/projetos/Tagpy.png",
     resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
     descricao:

@@ -165,21 +165,21 @@ export const projetos: Project[] = [
 ];
 
 export const cursos: Course[] = [
-  { curso: "Customer Experience Management", plataforma: "FIAP", tags: ["CX", "UX", "Management", "Business"], certificado: "/placeholder.svg" },
-  { curso: "Front-End", plataforma: "FIAP", tags: ["Frontend", "Web", "UI"], certificado: "/placeholder.svg" },
-  { curso: "Técnicas de Negociação", plataforma: "FIAP", tags: ["Negociação", "Business", "Soft Skills"], certificado: "/placeholder.svg" },
-  { curso: "User Experience", plataforma: "FIAP", tags: ["UX", "Design", "Frontend"], certificado: "/placeholder.svg" },
-  { curso: "Estratégia e Inovação Tecnológica com aplicações em IA e IoT", plataforma: "FIAP", tags: ["IA", "IoT", "Estratégia", "Inovação"], certificado: "/placeholder.svg" },
-  { curso: "Cloud Fundamentals, Administration and Solution Architect", plataforma: "FIAP", tags: ["AWS", "Cloud", "DevOps", "Architecture"], certificado: "/placeholder.svg" },
-  { curso: "Desenvolvimento .NET", plataforma: "FIAP", tags: [".NET", "C#", "Backend", "Web"], certificado: "/placeholder.svg" },
-  { curso: "DevOps & Agile Culture", plataforma: "FIAP", tags: ["DevOps", "Agile", "Infrastructure", "CI/CD"], certificado: "/placeholder.svg" },
-  { curso: "Gestão de Infraestrutura de TI", plataforma: "FIAP", tags: ["Infrastructure", "IT", "DevOps", "Management"], certificado: "/placeholder.svg" },
-  { curso: "Inteligência Artificial e Computacional", plataforma: "FIAP", tags: ["IA", "Machine Learning", "Python", "AI"], certificado: "/placeholder.svg" },
-  { curso: "Python", plataforma: "FIAP", tags: ["Python", "Programming", "Backend", "Data Science"], certificado: "/placeholder.svg" },
-  { curso: "Desenvolvimento de Aplicações Móveis", plataforma: "FIAP", tags: ["Mobile", "Flutter", "React Native", "Development"], certificado: "/placeholder.svg" },
-  { curso: "Desenvolvimento e Designer Web 2.0", plataforma: "FIAP", tags: ["Web", "Design", "Frontend", "UX/UI"], certificado: "/placeholder.svg" },
-  { curso: "Análise de Sistemas e Prototipação Web", plataforma: "FIAP", tags: ["Web", "Analysis", "Design", "Frontend"], certificado: "/placeholder.svg" },
-  { curso: "Formação Social e Sustentabilidade", plataforma: "FIAP", tags: ["Social", "Sustainability", "Business", "Management"], certificado: "/placeholder.svg" },
+  { curso: "Customer Experience Management", plataforma: "FIAP", tags: ["CX", "UX", "Management", "Business"], certificado: "/certificados/Customer_Experience_Management.png" },
+  { curso: "Front-End", plataforma: "FIAP", tags: ["Frontend", "Web", "UI"], certificado: "/certificados/Front_End.png" },
+  { curso: "Técnicas de Negociação", plataforma: "FIAP", tags: ["Negociação", "Business", "Soft Skills"], certificado: "/certificados/Tecnicas_de_Negociacao.png" },
+  { curso: "User Experience", plataforma: "FIAP", tags: ["UX", "Design", "Frontend"], certificado: "/certificados/User_Experience.png" },
+  { curso: "Estratégia e Inovação Tecnológica com aplicações em IA e IoT", plataforma: "FIAP", tags: ["IA", "IoT", "Estratégia", "Inovação"], certificado: "" },
+  { curso: "Cloud Fundamentals, Administration and Solution Architect", plataforma: "FIAP", tags: ["AWS", "Cloud", "DevOps", "Architecture"], certificado: "/certificados/Cloud_Fundamentals_Administration_and_Solution_Architect.png" },
+  { curso: "Desenvolvimento .NET", plataforma: "FIAP", tags: [".NET", "C#", "Backend", "Web"], certificado: "/certificados/Desenvolvimento_NET.png" },
+  { curso: "DevOps & Agile Culture", plataforma: "FIAP", tags: ["DevOps", "Agile", "Infrastructure", "CI/CD"], certificado: "/certificados/DevOps_Agile Culture.png" },
+  { curso: "Gestão de Infraestrutura de TI", plataforma: "FIAP", tags: ["Infrastructure", "IT", "DevOps", "Management"], certificado: "/certificados/Gestao_de_Infraestrutura_de_TI.png" },
+  { curso: "Inteligência Artificial e Computacional", plataforma: "FIAP", tags: ["IA", "Machine Learning", "Python", "AI"], certificado: "/certificados/Inteligencia_Artificial_e_Computacional.png" },
+  { curso: "Python", plataforma: "FIAP", tags: ["Python", "Programming", "Backend", "Data Science"], certificado: "/certificados/Python.png" },
+  { curso: "Desenvolvimento de Aplicações Móveis", plataforma: "FIAP", tags: ["Mobile", "Flutter", "React Native", "Development"], certificado: "" },
+  { curso: "Desenvolvimento e Designer Web 2.0", plataforma: "FIAP", tags: ["Web", "Design", "Frontend", "UX/UI"], certificado: "" },
+  { curso: "Análise de Sistemas e Prototipação Web", plataforma: "FIAP", tags: ["Web", "Analysis", "Design", "Frontend"], certificado: "" },
+  { curso: "Formação Social e Sustentabilidade", plataforma: "FIAP", tags: ["Social", "Sustainability", "Business", "Management"], certificado: "/certificados/Formacao_Social_e_Sustentabilidade.png" },
 ];
 
 export const navigationLinks: NavigationLink[] = [

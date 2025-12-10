@@ -4,7 +4,10 @@ import Modal from "@/components/Modal";
 import { useState } from "react";
 
 export default function Highlights() {
-  const destaque = projetos.slice(0, 3);
+  const projectOrder = ["Tagpy - NFC & Cartões Digitais", "GreenLight", "Blue Horizon"];
+  const destaque = projectOrder
+    .map(title => projetos.find(p => p.titulo.includes(title.split(" - ")[0].split(" &")[0].trim())))
+    .filter((p): p is typeof projetos[0] => p !== undefined);
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const ativo = openIndex !== null ? destaque[openIndex] : null;
 

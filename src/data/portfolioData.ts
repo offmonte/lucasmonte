@@ -27,6 +27,17 @@ export interface ContactInfo {
 
 export const projetos: Project[] = [
   {
+    titulo: "Tagpy - Landing Page",
+    imagem: "/projetos/Tagpy.png",
+    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
+    descricao:
+      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
+    links: {
+      GitHub: "https://github.com/offmonte",
+      Site: "https://tagpy.vercel.app"
+    },
+  },
+  {
     titulo: "APIs com RabbitMQ",
     imagem: "/projetos/RabbitMQ.jpg",
     resumo: "Exemplo prático de comunicação assíncrona entre duas APIs utilizando RabbitMQ e arquitetura Produtor–Consumidor.",
@@ -73,17 +84,7 @@ export const projetos: Project[] = [
       LinkedIn: "https://www.linkedin.com/in/lucas-monte-verde/",
     },
   },
-  {
-    titulo: "Tagpy - Landing Page",
-    imagem: "/projetos/Tagpy.png",
-    resumo: "Plataforma moderna para transformar cartões, adesivos ou displays físicos em portais digitais via NFC - ideal para compartilhar contatos, links e conteúdos com um toque.",
-    descricao:
-      "Tagpy usa tecnologia NFC para transformar cartões, adesivos ou displays em portais digitais. Basta encostar um smartphone compatível para acessar contatos, redes sociais, portfólio ou serviços sem digitar nada.\n\nUma solução prática e sustentável para networking, divulgação profissional e negócios.",
-    links: {
-      GitHub: "https://github.com/offmonte",
-      Site: "https://tagpy.vercel.app"
-    },
-  },
+  
   {
     titulo: "Green Light",
     imagem: "/projetos/GreenLight.png",

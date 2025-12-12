@@ -22,7 +22,7 @@ export interface ContactInfo {
   email: string;
   phone: string;
   location: string;
-  socialLinks: { linkedin: string; github: string };
+  socialLinks: { linkedin: string; github: string; whatsapp: string };
 }
 
 export const projetos: Project[] = [
@@ -222,6 +222,7 @@ export const contatoInfo: ContactInfo = {
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/lucas-monte-verde/",
     github: "https://github.com/offmonte",
+    whatsapp: "https://wa.me/+5511942084610",
   },
 };
 

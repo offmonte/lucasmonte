@@ -65,6 +65,9 @@ export default function Contact() {
               <a className="btn-accent rounded-md px-3 py-2" href={contatoInfo.socialLinks.github} target="_blank" rel="noreferrer">
                 GitHub
               </a>
+              <a className="btn-accent-2 rounded-md px-3 py-2" href={contatoInfo.socialLinks.whatsapp} target="_blank" rel="noreferrer">
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
